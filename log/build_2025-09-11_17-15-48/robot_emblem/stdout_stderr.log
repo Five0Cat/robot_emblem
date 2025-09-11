@@ -1,0 +1,20 @@
+[35m[1mConsolidate compiler generated dependencies of target map_loader_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/map_loader_node.dir/src/core/map_loader_node.cpp.o[0m
+[01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:[m[K In member function ‘[01m[Kvoid MaploaderNode::publishMap()[m[K’:
+[01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:99:29:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Krclcpp::Time rclcpp::Node::now() const[m[K’
+   99 |         grid.header.stamp = [01;31m[Know[m[K;
+      |                             [01;31m[K^~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1126:3:[m[K [01;36m[Knote: [m[Kdeclared here
+ 1126 |   [01;36m[Know[m[K() const;
+      |   [01;36m[K^~~[m[K
+[01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:106:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmap[m[K’?
+  106 |         grid.scale.x = std::max(0.01, [01;31m[Kmap_[m[K.resolution * 0.05); // 5% 的格宽，最低 1cm
+      |                                       [01;31m[K^~~~[m[K
+      |                                       [32m[Kmap[m[K
+gmake[2]: *** [CMakeFiles/map_loader_node.dir/build.make:76: CMakeFiles/map_loader_node.dir/src/core/map_loader_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/map_loader_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

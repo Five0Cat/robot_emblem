@@ -1,0 +1,81 @@
+[0.000000] (-) TimerEvent: {}
+[0.000709] (robot_emblem) JobQueued: {'identifier': 'robot_emblem', 'dependencies': OrderedDict()}
+[0.000791] (robot_emblem) JobStarted: {'identifier': 'robot_emblem'}
+[0.013472] (robot_emblem) JobProgress: {'identifier': 'robot_emblem', 'progress': 'cmake'}
+[0.018499] (robot_emblem) JobProgress: {'identifier': 'robot_emblem', 'progress': 'build'}
+[0.019185] (robot_emblem) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/fvc/emblem_ws/build/robot_emblem', '--', '-j2', '-l2'], 'cwd': '/home/fvc/emblem_ws/build/robot_emblem', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'fvc'), ('LC_TIME', 'ja_JP.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/fvc'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.103.2'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'ja_JP.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1021'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=110374297999103a859c91d868c21fa7'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'fvc'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'fvc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/fvc-virtual-machine:@/tmp/.ICE-unix/1021,unix/fvc-virtual-machine:/tmp/.ICE-unix/1021'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ja_JP.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/934868b7_20ec_40e6_8af7_63dbfce3e38f'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'ja_JP.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-83af89e4cd.sock'), ('GNOME_TERMINAL_SERVICE', ':1.93'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ja_JP.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ja_JP.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ja_JP.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/fvc/emblem_ws/build/robot_emblem'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=110374297999103a859c91d868c21fa7'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ja_JP.UTF-8'), ('LC_PAPER', 'ja_JP.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.100342] (-) TimerEvent: {}
+[0.131891] (robot_emblem) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target map_loader_node\x1b[0m\n'}
+[0.175760] (robot_emblem) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/map_loader_node.dir/src/core/map_loader_node.cpp.o\x1b[0m\n'}
+[0.204676] (-) TimerEvent: {}
+[0.306366] (-) TimerEvent: {}
+[0.407206] (-) TimerEvent: {}
+[0.511408] (-) TimerEvent: {}
+[0.612284] (-) TimerEvent: {}
+[0.716305] (-) TimerEvent: {}
+[0.818508] (-) TimerEvent: {}
+[0.924688] (-) TimerEvent: {}
+[1.027086] (-) TimerEvent: {}
+[1.133276] (-) TimerEvent: {}
+[1.234425] (-) TimerEvent: {}
+[1.336586] (-) TimerEvent: {}
+[1.443243] (-) TimerEvent: {}
+[1.544453] (-) TimerEvent: {}
+[1.646186] (-) TimerEvent: {}
+[1.747826] (-) TimerEvent: {}
+[1.851684] (-) TimerEvent: {}
+[1.958291] (-) TimerEvent: {}
+[2.061968] (-) TimerEvent: {}
+[2.164077] (-) TimerEvent: {}
+[2.268729] (-) TimerEvent: {}
+[2.370410] (-) TimerEvent: {}
+[2.473661] (-) TimerEvent: {}
+[2.576843] (-) TimerEvent: {}
+[2.681306] (-) TimerEvent: {}
+[2.783774] (-) TimerEvent: {}
+[2.886585] (-) TimerEvent: {}
+[2.987654] (-) TimerEvent: {}
+[3.090510] (-) TimerEvent: {}
+[3.191441] (-) TimerEvent: {}
+[3.292338] (-) TimerEvent: {}
+[3.395139] (-) TimerEvent: {}
+[3.503512] (-) TimerEvent: {}
+[3.605842] (-) TimerEvent: {}
+[3.707111] (-) TimerEvent: {}
+[3.809199] (-) TimerEvent: {}
+[3.910409] (-) TimerEvent: {}
+[4.018712] (-) TimerEvent: {}
+[4.123818] (-) TimerEvent: {}
+[4.230984] (-) TimerEvent: {}
+[4.338920] (-) TimerEvent: {}
+[4.445072] (-) TimerEvent: {}
+[4.451635] (robot_emblem) StderrLine: {'line': b'\x1b[01m\x1b[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[KMap MaploaderNode::loadMapFromYaml(const string&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.452366] (robot_emblem) StderrLine: {'line': b'\x1b[01m\x1b[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:32:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass MaploaderNode\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kyaml_path\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.452873] (robot_emblem) StderrLine: {'line': b'   32 |             std::ifstream fin(this->\x1b[01;31m\x1b[Kyaml_path\x1b[m\x1b[K);\n'}
+[4.452982] (robot_emblem) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[4.453057] (robot_emblem) StderrLine: {'line': b'\x1b[01m\x1b[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:30:48:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kyaml_path\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.455098] (robot_emblem) StderrLine: {'line': b'   30 |         Map loadMapFromYaml(\x1b[01;35m\x1b[Kconst std::string& yaml_path\x1b[m\x1b[K){\n'}
+[4.455182] (robot_emblem) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~\x1b[m\x1b[K\n'}
+[4.545937] (-) TimerEvent: {}
+[4.650985] (-) TimerEvent: {}
+[4.752628] (-) TimerEvent: {}
+[4.853504] (-) TimerEvent: {}
+[4.955718] (-) TimerEvent: {}
+[5.058609] (-) TimerEvent: {}
+[5.161385] (-) TimerEvent: {}
+[5.262366] (-) TimerEvent: {}
+[5.364669] (-) TimerEvent: {}
+[5.468721] (-) TimerEvent: {}
+[5.570062] (-) TimerEvent: {}
+[5.671101] (-) TimerEvent: {}
+[5.773857] (-) TimerEvent: {}
+[5.877397] (-) TimerEvent: {}
+[5.983718] (-) TimerEvent: {}
+[6.084937] (-) TimerEvent: {}
+[6.185986] (-) TimerEvent: {}
+[6.222054] (robot_emblem) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/map_loader_node.dir/build.make:76: CMakeFiles/map_loader_node.dir/src/core/map_loader_node.cpp.o] Error 1\n'}
+[6.222661] (robot_emblem) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/map_loader_node.dir/all] Error 2\n'}
+[6.222764] (robot_emblem) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[6.230792] (robot_emblem) CommandEnded: {'returncode': 2}
+[6.250164] (robot_emblem) JobEnded: {'identifier': 'robot_emblem', 'rc': 2}
+[6.263271] (-) EventReactorShutdown: {}

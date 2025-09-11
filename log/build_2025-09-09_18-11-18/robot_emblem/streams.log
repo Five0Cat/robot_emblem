@@ -1,0 +1,54 @@
+[0.061s] Invoking command in '/home/fvc/emblem_ws/build/robot_emblem': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/fvc/emblem_ws/src/robot_emblem -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/fvc/emblem_ws/install/robot_emblem
+[0.401s] -- The C compiler identification is GNU 11.4.0
+[0.588s] -- The CXX compiler identification is GNU 11.4.0
+[0.609s] -- Detecting C compiler ABI info
+[0.838s] -- Detecting C compiler ABI info - done
+[0.849s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.852s] -- Detecting C compile features
+[0.853s] -- Detecting C compile features - done
+[0.860s] -- Detecting CXX compiler ABI info
+[1.053s] -- Detecting CXX compiler ABI info - done
+[1.071s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.071s] -- Detecting CXX compile features
+[1.072s] -- Detecting CXX compile features - done
+[1.102s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.357s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.481s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.570s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[1.695s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.708s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.727s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.764s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.800s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.907s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.913s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.122s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.181s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.296s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.337s] -- Looking for pthread.h
+[2.495s] -- Looking for pthread.h - found
+[2.497s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.698s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.698s] -- Found Threads: TRUE  
+[2.857s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.024s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.025s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/fvc/emblem_ws/src/robot_emblem/include>
+[3.025s] -- Configured cppcheck exclude dirs and/or files: 
+[3.028s] -- Added test 'lint_cmake' to check CMake code style
+[3.033s] -- Added test 'uncrustify' to check C / C++ code style
+[3.033s] -- Configured uncrustify additional arguments: 
+[3.035s] -- Added test 'xmllint' to check XML markup files
+[3.044s] -- Configuring done
+[3.066s] -- Generating done
+[3.078s] -- Build files have been written to: /home/fvc/emblem_ws/build/robot_emblem
+[3.100s] Invoked command in '/home/fvc/emblem_ws/build/robot_emblem' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/fvc/emblem_ws/src/robot_emblem -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/fvc/emblem_ws/install/robot_emblem
+[3.110s] Invoking command in '/home/fvc/emblem_ws/build/robot_emblem': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/fvc/emblem_ws/build/robot_emblem -- -j2 -l2
+[3.239s] [ 50%] [32mBuilding CXX object CMakeFiles/map_node.dir/src/core/map.cpp.o[0m
+[3.272s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Ksrc/robot_emblem/include/robot_emblem/core/game.hpp: No such file or directory
+[3.273s]     1 | #include [01;31m[K"src/robot_emblem/include/robot_emblem/core/game.hpp"[m[K
+[3.273s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.273s] compilation terminated.
+[3.274s] gmake[2]: *** [CMakeFiles/map_node.dir/build.make:76: CMakeFiles/map_node.dir/src/core/map.cpp.o] Error 1
+[3.275s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/map_node.dir/all] Error 2
+[3.282s] gmake: *** [Makefile:146: all] Error 2
+[3.284s] Invoked command in '/home/fvc/emblem_ws/build/robot_emblem' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/fvc/emblem_ws/build/robot_emblem -- -j2 -l2

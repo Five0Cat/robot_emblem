@@ -1,0 +1,181 @@
+[0.022s] Invoking command in '/home/fvc/emblem_ws/build/robot_emblem': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/fvc/emblem_ws/src/robot_emblem -DCMAKE_INSTALL_PREFIX=/home/fvc/emblem_ws/install/robot_emblem
+[0.046s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.215s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.250s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[0.305s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.310s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.321s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.343s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.371s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.443s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.450s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.634s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.754s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.811s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.937s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.938s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/fvc/emblem_ws/src/robot_emblem/include>
+[0.938s] -- Configured cppcheck exclude dirs and/or files: 
+[0.940s] -- Added test 'lint_cmake' to check CMake code style
+[0.944s] -- Added test 'uncrustify' to check C / C++ code style
+[0.944s] -- Configured uncrustify additional arguments: 
+[0.945s] -- Added test 'xmllint' to check XML markup files
+[0.948s] -- Configuring done
+[0.976s] -- Generating done
+[0.982s] -- Build files have been written to: /home/fvc/emblem_ws/build/robot_emblem
+[0.996s] Invoked command in '/home/fvc/emblem_ws/build/robot_emblem' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/fvc/emblem_ws/src/robot_emblem -DCMAKE_INSTALL_PREFIX=/home/fvc/emblem_ws/install/robot_emblem
+[0.999s] Invoking command in '/home/fvc/emblem_ws/build/robot_emblem': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/fvc/emblem_ws/build/robot_emblem -- -j2 -l2
+[1.077s] [ 50%] [32mBuilding CXX object CMakeFiles/map_loader_node.dir/src/core/map_loader_node.cpp.o[0m
+[4.696s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:5:1:[m[K [01;31m[Kerror: [m[K‘[01m[Ksturct[m[K’ does not name a type; did you mean ‘[01m[Kstruct[m[K’?
+[4.696s]     5 | [01;31m[Ksturct[m[K Map{
+[4.696s]       | [01;31m[K^~~~~~[m[K
+[4.696s]       | [32m[Kstruct[m[K
+[4.701s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:27:9:[m[K [01;31m[Kerror: [m[K‘[01m[KMap[m[K’ does not name a type
+[4.701s]    27 |         [01;31m[KMap[m[K loadMapFromYaml(const std::string& yaml_path){
+[4.701s]       |         [01;31m[K^~~[m[K
+[4.701s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:45:31:[m[K [01;31m[Kerror: [m[K‘[01m[KMap[m[K’ does not name a type
+[4.701s]    45 |         void publishMap(const [01;31m[KMap[m[K& map) {
+[4.701s]       |                               [01;31m[K^~~[m[K
+[4.720s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:95:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kvisualization_msgs[m[K’ was not declared in this scope
+[4.722s]    95 |     rclcpp::Publisher<[01;31m[Kvisualization_msgs[m[K::msg::MarkerArray>::SharedPtr map_pub_;
+[4.722s]       |                       [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[4.722s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:95:59:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[4.722s]    95 |     rclcpp::Publisher<visualization_msgs::msg::MarkerArray[01;31m[K>[m[K::SharedPtr map_pub_;
+[4.723s]       |                                                           [01;31m[K^[m[K
+[4.723s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:95:62:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[4.723s]    95 |     rclcpp::Publisher<visualization_msgs::msg::MarkerArray>::[01;31m[KSharedPtr[m[K map_pub_;
+[4.723s]       |                                                              [01;31m[K^~~~~~~~~[m[K
+[4.723s]       |                                                                       [32m[K;[m[K
+[4.728s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:95:72:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_pub_[m[K’ does not name a type
+[4.728s]    95 |     rclcpp::Publisher<visualization_msgs::msg::MarkerArray>::SharedPtr [01;31m[Kmap_pub_[m[K;
+[4.728s]       |                                                                        [01;31m[K^~~~~~~~[m[K
+[4.728s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:97:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+[4.728s]    97 | }
+[4.729s]       |  [01;31m[K^[m[K
+[4.729s]       |  [32m[K;[m[K
+[4.740s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:[m[K In constructor ‘[01m[KMaploaderNode::MaploaderNode()[m[K’:
+[4.741s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:16:9:[m[K [01;31m[Kerror: [m[K‘[01m[KMap[m[K’ was not declared in this scope
+[4.741s]    16 |         [01;31m[KMap[m[K map = loadMapFromYaml(yaml_path);
+[4.741s]       |         [01;31m[K^~~[m[K
+[4.752s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:18:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_pub_[m[K’ was not declared in this scope
+[4.752s]    18 |         [01;31m[Kmap_pub_[m[K = this->create_publisher<visualization_msgs::msg::MarkerArray>("/map_markers", 10);
+[4.755s]       |         [01;31m[K^~~~~~~~[m[K
+[4.780s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:18:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kvisualization_msgs[m[K’ was not declared in this scope
+[4.780s]    18 |         map_pub_ = this->create_publisher<[01;31m[Kvisualization_msgs[m[K::msg::MarkerArray>("/map_markers", 10);
+[4.780s]       |                                           [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[4.780s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:18:26:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[4.780s]    18 |         map_pub_ = this->[01;31m[Kcreate_publisher<visualization_msgs::msg::MarkerArray>[m[K("/map_markers", 10);
+[4.781s]       |                          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.781s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:18:80:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KMaploaderNode::create_publisher<<expression error> >(const char [13], int)[m[K’
+[4.781s]    18 |         map_pub_ = [01;31m[Kthis->create_publisher<visualization_msgs::msg::MarkerArray>("/map_markers", 10)[m[K;
+[4.781s]       |                    [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+[4.781s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[4.781s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[4.781s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.781s]                  from [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:1[m[K:
+[4.781s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+[4.781s]   195 |   [01;36m[Kcreate_publisher[m[K(
+[4.781s]       |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[4.784s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.785s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:18:80:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[4.785s]    18 |         map_pub_ = [01;31m[Kthis->create_publisher<visualization_msgs::msg::MarkerArray>("/map_markers", 10)[m[K;
+[4.785s]       |                    [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+[4.785s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:23:24:[m[K [01;31m[Kerror: [m[K‘[01m[KMapLoaderNode[m[K’ has not been declared
+[4.788s]    23 |             std::bind(&[01;31m[KMapLoaderNode[m[K::publishMap, this, map)
+[4.788s]       |                        [01;31m[K^~~~~~~~~~~~~[m[K
+[4.788s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:23:57:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap[m[K’ was not declared in this scope
+[4.788s]    23 |             std::bind(&MapLoaderNode::publishMap, this, [01;31m[Kmap[m[K)
+[4.788s]       |                                                         [01;31m[K^~~[m[K
+[4.788s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:23:57:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[4.788s] In file included from [01m[K/usr/include/c++/11/map:61[m[K,
+[4.789s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:24[m[K,
+[4.789s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[4.789s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[4.789s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.789s]                  from [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:1[m[K:
+[4.789s] [01m[K/usr/include/c++/11/bits/stl_map.h:100:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::map[m[K’
+[4.789s]   100 |     class [01;36m[Kmap[m[K
+[4.789s]       |           [01;36m[K^~~[m[K
+[4.790s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:24[m[K,
+[4.790s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[4.790s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[4.790s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.790s]                  from [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:1[m[K:
+[4.790s] [01m[K/usr/include/c++/11/map:78:13:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::pmr::map[m[K’
+[4.790s]    78 |       using [01;36m[Kmap[m[K
+[4.790s]       |             [01;36m[K^~~[m[K
+[4.790s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:[m[K In member function ‘[01m[Kvoid MaploaderNode::publishMap(const int&)[m[K’:
+[4.790s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:46:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kvisualization_msgs[m[K’ has not been declared
+[4.790s]    46 |         [01;31m[Kvisualization_msgs[m[K::msg::MarkerArray marker_array;
+[4.791s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[4.791s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:48:33:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kheight[m[K’ in ‘[01m[Kmap[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+[4.798s]    48 |         for (int y = 0; y < map.[01;31m[Kheight[m[K; ++y) {
+[4.798s]       |                                 [01;31m[K^~~~~~[m[K
+[4.798s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:49:37:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kwidth[m[K’ in ‘[01m[Kmap[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+[4.799s]    49 |             for (int x = 0; x < map.[01;31m[Kwidth[m[K; ++x) {
+[4.799s]       |                                     [01;31m[K^~~~~[m[K
+[4.799s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:50:35:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kwidth[m[K’ in ‘[01m[Kmap[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+[4.799s]    50 |                 int idx = y * map.[01;31m[Kwidth[m[K + x;
+[4.799s]       |                                   [01;31m[K^~~~~[m[K
+[4.799s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:51:35:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kdata[m[K’ in ‘[01m[Kmap[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+[4.800s]    51 |                 int terrain = map.[01;31m[Kdata[m[K[idx];
+[4.800s]       |                                   [01;31m[K^~~~[m[K
+[4.800s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:53:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kvisualization_msgs[m[K’ has not been declared
+[4.800s]    53 |                 [01;31m[Kvisualization_msgs[m[K::msg::Marker marker;
+[4.800s]       |                 [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[4.803s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:54:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kmarker[m[K’ was not declared in this scope
+[4.803s]    54 |                 [01;31m[Kmarker[m[K.header.frame_id = "map";
+[4.803s]       |                 [01;31m[K^~~~~~[m[K
+[4.803s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:57:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kvisualization_msgs[m[K’ has not been declared
+[4.804s]    57 |                 marker.type = [01;31m[Kvisualization_msgs[m[K::msg::Marker::CUBE;
+[4.804s]       |                               [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[4.804s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:58:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kvisualization_msgs[m[K’ has not been declared
+[4.804s]    58 |                 marker.action = [01;31m[Kvisualization_msgs[m[K::msg::Marker::ADD;
+[4.804s]       |                                 [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[4.804s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:61:46:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Korigin_x[m[K’ in ‘[01m[Kmap[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+[4.804s]    61 |                 marker.pose.position.x = map.[01;31m[Korigin_x[m[K + x * map.resolution;
+[4.805s]       |                                              [01;31m[K^~~~~~~~[m[K
+[4.807s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:61:65:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kresolution[m[K’ in ‘[01m[Kmap[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+[4.807s]    61 |                 marker.pose.position.x = map.origin_x + x * map.[01;31m[Kresolution[m[K;
+[4.807s]       |                                                                 [01;31m[K^~~~~~~~~~[m[K
+[4.807s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:62:46:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Korigin_y[m[K’ in ‘[01m[Kmap[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+[4.807s]    62 |                 marker.pose.position.y = map.[01;31m[Korigin_y[m[K + y * map.resolution;
+[4.807s]       |                                              [01;31m[K^~~~~~~~[m[K
+[4.807s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:62:65:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kresolution[m[K’ in ‘[01m[Kmap[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+[4.807s]    62 |                 marker.pose.position.y = map.origin_y + y * map.[01;31m[Kresolution[m[K;
+[4.807s]       |                                                                 [01;31m[K^~~~~~~~~~[m[K
+[4.807s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:66:38:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kresolution[m[K’ in ‘[01m[Kmap[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+[4.807s]    66 |                 marker.scale.x = map.[01;31m[Kresolution[m[K;
+[4.808s]       |                                      [01;31m[K^~~~~~~~~~[m[K
+[4.808s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:67:38:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kresolution[m[K’ in ‘[01m[Kmap[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+[4.808s]    67 |                 marker.scale.y = map.[01;31m[Kresolution[m[K;
+[4.808s]       |                                      [01;31m[K^~~~~~~~~~[m[K
+[4.808s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:71:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_msgs[m[K’ has not been declared
+[4.808s]    71 |                 [01;31m[Kstd_msgs[m[K::msg::ColorRGBA color;
+[4.808s]       |                 [01;31m[K^~~~~~~~[m[K
+[4.827s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:74:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcolor[m[K’ was not declared in this scope
+[4.827s]    74 |                         [01;31m[Kcolor[m[K.r = 0.5f; color.g = 0.5f; color.b = 0.5f; color.a = 1.0f;
+[4.827s]       |                         [01;31m[K^~~~~[m[K
+[4.849s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:86:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kcolor[m[K’ was not declared in this scope
+[4.849s]    86 |                 marker.color = [01;31m[Kcolor[m[K;
+[4.849s]       |                                [01;31m[K^~~~~[m[K
+[4.859s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:89:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kmarker_array[m[K’ was not declared in this scope
+[4.859s]    89 |                 [01;31m[Kmarker_array[m[K.markers.push_back(marker);
+[4.859s]       |                 [01;31m[K^~~~~~~~~~~~[m[K
+[4.873s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:93:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_pub_[m[K’ was not declared in this scope
+[4.873s]    93 |         [01;31m[Kmap_pub_[m[K->publish(marker_array);
+[4.873s]       |         [01;31m[K^~~~~~~~[m[K
+[4.892s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:93:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kmarker_array[m[K’ was not declared in this scope
+[4.892s]    93 |         map_pub_->publish([01;31m[Kmarker_array[m[K);
+[4.894s]       |                           [01;31m[K^~~~~~~~~~~~[m[K
+[4.895s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[4.897s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:101:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kargv[m[K’ was not declared in this scope; did you mean ‘[01m[Kargc[m[K’?
+[4.897s]   101 |     rclcpp::init(argc, [01;31m[Kargv[m[K);
+[4.898s]       |                        [01;31m[K^~~~[m[K
+[4.898s]       |                        [32m[Kargc[m[K
+[4.906s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:100:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kagrv[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.906s]   100 | int main(int argc , [01;35m[Kchar ** agrv[m[K){
+[4.907s]       |                     [01;35m[K~~~~~~~~^~~~[m[K
+[5.684s] gmake[2]: *** [CMakeFiles/map_loader_node.dir/build.make:76: CMakeFiles/map_loader_node.dir/src/core/map_loader_node.cpp.o] Error 1
+[5.684s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/map_loader_node.dir/all] Error 2
+[5.684s] gmake: *** [Makefile:146: all] Error 2
+[5.689s] Invoked command in '/home/fvc/emblem_ws/build/robot_emblem' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/fvc/emblem_ws/build/robot_emblem -- -j2 -l2

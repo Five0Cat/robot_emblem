@@ -1,0 +1,44 @@
+[0.014s] Invoking command in '/home/fvc/emblem_ws/build/robot_emblem': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/fvc/emblem_ws/build/robot_emblem -- -j2 -l2
+[0.127s] [35m[1mConsolidate compiler generated dependencies of target map_loader_node[0m
+[0.157s] [ 50%] [32mBuilding CXX object CMakeFiles/map_loader_node.dir/src/core/map_loader_node.cpp.o[0m
+[5.903s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:[m[K In constructor ‘[01m[KMaploaderNode::MaploaderNode()[m[K’:
+[5.903s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:25:41:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KMaploaderNode::create_wall_timer(std::chrono::milliseconds, std::_Bind_helper<false, void (MaploaderNode::*)(const Map&), MaploaderNode*, Map&>::type)[m[K’
+[5.903s]    25 |         timer_ = [01;31m[Kthis->create_wall_timer([m[K
+[5.903s]       |                  [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[5.903s]    26 | [01;31m[K            std::chrono::milliseconds(100),[m[K
+[5.906s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.907s]    27 | [01;31m[K            std::bind(&MaploaderNode::publishMap, this, map)[m[K
+[5.907s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.907s]    28 | [01;31m[K        )[m[K;
+[5.907s]       |         [01;31m[K~[m[K                                
+[5.907s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[5.907s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[5.907s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[5.908s]                  from [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:1[m[K:
+[5.908s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:238:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class DurationRepT, class DurationT, class CallbackT> typename rclcpp::WallTimer<CallbackT>::SharedPtr rclcpp::Node::create_wall_timer(std::chrono::duration<_Rep1, _Period1>, CallbackT, rclcpp::CallbackGroup::SharedPtr)[m[K’
+[5.908s]   238 |   [01;36m[Kcreate_wall_timer[m[K(
+[5.908s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[5.908s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:238:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.908s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321[m[K,
+[5.908s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[5.908s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[5.908s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[5.908s]                  from [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:1[m[K:
+[5.909s] /opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp: In substitution of ‘[01m[Ktemplate<class DurationRepT, class DurationT, class CallbackT> typename rclcpp::WallTimer<CallbackT>::SharedPtr rclcpp::Node::create_wall_timer(std::chrono::duration<_Rep1, _Period1>, CallbackT, rclcpp::CallbackGroup::SharedPtr) [with DurationRepT = long int; DurationT = std::ratio<1, 1000>; CallbackT = std::_Bind<void (MaploaderNode::*(MaploaderNode*, Map))(const Map&)>][m[K’:
+[5.915s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:25:41:[m[K   required from here
+[5.916s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:110:1:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, void>[m[K’
+[5.916s]   110 | [01;31m[KNode[m[K::create_wall_timer(
+[5.916s]       | [01;31m[K^~~~[m[K
+[5.916s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:110:1:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, void>[m[K’
+[5.916s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:110:1:[m[K [01;36m[Knote: [m[Kinvalid template non-type parameter
+[5.916s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:[m[K In member function ‘[01m[KMap MaploaderNode::loadMapFromYaml(const string&)[m[K’:
+[5.916s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:33:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass MaploaderNode[m[K’ has no member named ‘[01m[Kyaml_path[m[K’
+[5.917s]    33 |             std::ifstream fin(this->[01;31m[Kyaml_path[m[K);
+[5.917s]       |                                     [01;31m[K^~~~~~~~~[m[K
+[5.917s] [01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:31:48:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kyaml_path[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[5.917s]    31 |         Map loadMapFromYaml([01;35m[Kconst std::string& yaml_path[m[K){
+[5.917s]       |                             [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[7.466s] gmake[2]: *** [CMakeFiles/map_loader_node.dir/build.make:76: CMakeFiles/map_loader_node.dir/src/core/map_loader_node.cpp.o] Error 1
+[7.469s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/map_loader_node.dir/all] Error 2
+[7.470s] gmake: *** [Makefile:146: all] Error 2
+[7.485s] Invoked command in '/home/fvc/emblem_ws/build/robot_emblem' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/fvc/emblem_ws/build/robot_emblem -- -j2 -l2

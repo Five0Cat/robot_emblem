@@ -1,0 +1,1 @@
+/home/fvc/emblem_ws/build/robot_emblem/ament_cmake_core/robot_emblemConfig-version.cmake

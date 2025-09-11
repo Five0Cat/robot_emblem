@@ -1,0 +1,10 @@
+[01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:[m[K In member function ‘[01m[KMap MaploaderNode::loadMapFromYaml(const string&)[m[K’:
+[01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:32:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass MaploaderNode[m[K’ has no member named ‘[01m[Kyaml_path[m[K’
+   32 |             std::ifstream fin(this->[01;31m[Kyaml_path[m[K);
+      |                                     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/fvc/emblem_ws/src/robot_emblem/src/core/map_loader_node.cpp:30:48:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kyaml_path[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   30 |         Map loadMapFromYaml([01;35m[Kconst std::string& yaml_path[m[K){
+      |                             [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/map_loader_node.dir/build.make:76: CMakeFiles/map_loader_node.dir/src/core/map_loader_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/map_loader_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
