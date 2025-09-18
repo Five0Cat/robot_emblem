@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/fvc/emblem_ws/src/robot_emblem
+CMAKE_SOURCE_DIR = /home/fvc/Desktop/robot_emblem/src/robot_emblem
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/fvc/emblem_ws/build/robot_emblem
+CMAKE_BINARY_DIR = /home/fvc/Desktop/robot_emblem/build/robot_emblem
 
 # Utility rule file for robot_emblem_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/robot_emblem_uninstall.dir/compiler_depend.make
 include CMakeFiles/robot_emblem_uninstall.dir/progress.make
 
 CMakeFiles/robot_emblem_uninstall:
-	/usr/bin/cmake -P /home/fvc/emblem_ws/build/robot_emblem/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/fvc/Desktop/robot_emblem/build/robot_emblem/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 robot_emblem_uninstall: CMakeFiles/robot_emblem_uninstall
 robot_emblem_uninstall: CMakeFiles/robot_emblem_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/robot_emblem_uninstall.dir/clean:
 .PHONY : CMakeFiles/robot_emblem_uninstall.dir/clean
 
 CMakeFiles/robot_emblem_uninstall.dir/depend:
-	cd /home/fvc/emblem_ws/build/robot_emblem && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fvc/emblem_ws/src/robot_emblem /home/fvc/emblem_ws/src/robot_emblem /home/fvc/emblem_ws/build/robot_emblem /home/fvc/emblem_ws/build/robot_emblem /home/fvc/emblem_ws/build/robot_emblem/CMakeFiles/robot_emblem_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fvc/Desktop/robot_emblem/build/robot_emblem && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fvc/Desktop/robot_emblem/src/robot_emblem /home/fvc/Desktop/robot_emblem/src/robot_emblem /home/fvc/Desktop/robot_emblem/build/robot_emblem /home/fvc/Desktop/robot_emblem/build/robot_emblem /home/fvc/Desktop/robot_emblem/build/robot_emblem/CMakeFiles/robot_emblem_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/robot_emblem_uninstall.dir/depend
 

@@ -1,0 +1,30 @@
+[0.015s] Invoking command in '/home/fvc/Desktop/robot_emblem/build/robot_emblem': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/fvc/Desktop/robot_emblem/build/robot_emblem -- -j2 -l2
+[0.070s] [35m[1mConsolidate compiler generated dependencies of target unit_manager_node[0m
+[0.095s] [ 25%] [32mBuilding CXX object CMakeFiles/unit_manager_node.dir/src/core/unit_manager_node.cpp.o[0m
+[0.097s] [ 75%] Built target map_loader_node
+[2.289s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:[m[K In member function ‘[01m[Kbool UnitManagerNode::worldToIdx(double, double, int&, int&) const[m[K’:
+[2.289s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:70:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap[m[K’ was not declared in this scope
+[2.289s]    70 |             return(ix>=0 && ix<[01;31m[Kmap[m[K.width && iy>=0 &&iy<map.height);
+[2.289s]       |                                [01;31m[K^~~[m[K
+[2.289s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:70:32:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[2.289s] In file included from [01m[K/usr/include/c++/11/map:61[m[K,
+[2.289s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:24[m[K,
+[2.289s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.289s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.289s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.289s]                  from [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:1[m[K:
+[2.289s] [01m[K/usr/include/c++/11/bits/stl_map.h:100:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::map[m[K’
+[2.289s]   100 |     class [01;36m[Kmap[m[K
+[2.289s]       |           [01;36m[K^~~[m[K
+[2.289s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:24[m[K,
+[2.292s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.292s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.292s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.293s]                  from [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:1[m[K:
+[2.293s] [01m[K/usr/include/c++/11/map:78:13:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::pmr::map[m[K’
+[2.293s]    78 |       using [01;36m[Kmap[m[K
+[2.293s]       |             [01;36m[K^~~[m[K
+[4.540s] gmake[2]: *** [CMakeFiles/unit_manager_node.dir/build.make:76: CMakeFiles/unit_manager_node.dir/src/core/unit_manager_node.cpp.o] Error 1
+[4.542s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/unit_manager_node.dir/all] Error 2
+[4.543s] gmake: *** [Makefile:146: all] Error 2
+[4.544s] Invoked command in '/home/fvc/Desktop/robot_emblem/build/robot_emblem' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/fvc/Desktop/robot_emblem/build/robot_emblem -- -j2 -l2

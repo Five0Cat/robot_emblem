@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/fvc/emblem_ws/src/robot_emblem
+CMAKE_SOURCE_DIR = /home/fvc/Desktop/robot_emblem/src/robot_emblem
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/fvc/emblem_ws/build/robot_emblem
+CMAKE_BINARY_DIR = /home/fvc/Desktop/robot_emblem/build/robot_emblem
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/fvc/emblem_ws/build/robot_emblem && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fvc/emblem_ws/src/robot_emblem /home/fvc/emblem_ws/src/robot_emblem /home/fvc/emblem_ws/build/robot_emblem /home/fvc/emblem_ws/build/robot_emblem /home/fvc/emblem_ws/build/robot_emblem/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fvc/Desktop/robot_emblem/build/robot_emblem && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fvc/Desktop/robot_emblem/src/robot_emblem /home/fvc/Desktop/robot_emblem/src/robot_emblem /home/fvc/Desktop/robot_emblem/build/robot_emblem /home/fvc/Desktop/robot_emblem/build/robot_emblem /home/fvc/Desktop/robot_emblem/build/robot_emblem/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

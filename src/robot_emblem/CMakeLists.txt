@@ -11,6 +11,14 @@ find_package(rclcpp REQUIRED)
 find_package(yaml-cpp REQUIRED)
 find_package(visualization_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(tf2_ros REQUIRED)
+find_package(geometry_msgs REQUIRED)
+install(DIRECTORY launch
+  DESTINATION share/${PROJECT_NAME}
+)
+install(DIRECTORY maps
+  DESTINATION share/${PROJECT_NAME}
+)
 # ========== core node ==========
 add_executable(map_loader_node src/core/map_loader_node.cpp)
 target_include_directories(map_loader_node PUBLIC
@@ -22,6 +30,19 @@ target_link_libraries(map_loader_node yaml-cpp)
 install(TARGETS map_loader_node
   DESTINATION lib/${PROJECT_NAME}
 )
+  #=======unit_manager_node.cpp=======
+add_executable(unit_manager_node src/core/unit_manager_node.cpp)
+target_include_directories(unit_manager_node PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>
+)
+ament_target_dependencies(unit_manager_node
+  rclcpp visualization_msgs geometry_msgs tf2_ros
+)
+target_link_libraries(unit_manager_node yaml-cpp)
+
+install(TARGETS unit_manager_node
+  DESTINATION lib/${PROJECT_NAME})
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights

@@ -1,0 +1,144 @@
+[0.019s] Invoking command in '/home/fvc/Desktop/robot_emblem/build/robot_emblem': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/fvc/Desktop/robot_emblem/build/robot_emblem -- -j2 -l2
+[0.072s] [35m[1mConsolidate compiler generated dependencies of target unit_manager_node[0m
+[0.090s] [ 50%] Built target map_loader_node
+[0.097s] [ 75%] [32mBuilding CXX object CMakeFiles/unit_manager_node.dir/src/core/unit_manager_node.cpp.o[0m
+[2.225s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:[m[K In constructor ‘[01m[KUnitManagerNode::UnitManagerNode()[m[K’:
+[2.225s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:25:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kunit_name_[m[K’ was not declared in this scope; did you mean ‘[01m[Kget_name[m[K’?
+[2.225s]    25 |             [01;31m[Kunit_name_[m[K = "unit/alpha";
+[2.225s]       |             [01;31m[K^~~~~~~~~~[m[K
+[2.225s]       |             [32m[Kget_name[m[K
+[2.229s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:28:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_[m[K’ was not declared in this scope
+[2.229s]    28 |             if (!loadMap(yaml_path, [01;31m[Kmap_[m[K)) {
+[2.229s]       |                                     [01;31m[K^~~~[m[K
+[2.232s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:33:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kix_[m[K’ was not declared in this scope
+[2.233s]    33 |             [01;31m[Kix_[m[K = this->get_parameter("unit_ix").as_int();
+[2.233s]       |             [01;31m[K^~~[m[K
+[2.235s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:34:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kiy_[m[K’ was not declared in this scope
+[2.235s]    34 |             [01;31m[Kiy_[m[K = this->get_parameter("unit_iy").as_int();
+[2.235s]       |             [01;31m[K^~~[m[K
+[2.239s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:35:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_ix_[m[K’ was not declared in this scope
+[2.239s]    35 |             [01;31m[Kgoal_ix_[m[K = ix_;
+[2.239s]       |             [01;31m[K^~~~~~~~[m[K
+[2.243s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:36:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_iy_[m[K’ was not declared in this scope
+[2.243s]    36 |             [01;31m[Kgoal_iy_[m[K = iy_;
+[2.243s]       |             [01;31m[K^~~~~~~~[m[K
+[2.249s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:38:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmarker_pub_[m[K’ was not declared in this scope
+[2.249s]    38 |             [01;31m[Kmarker_pub_[m[K = this->create_publisher<visualization_msgs::msg::Marker>("/unit_marker",1);
+[2.249s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[2.260s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:39:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_broadcaster_[m[K’ was not declared in this scope
+[2.260s]    39 |             [01;31m[Ktf_broadcaster_[m[K = std::make_unique<tf2_ros::TransformBroadcaster>(this);
+[2.260s]       |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.272s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:41:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kclicked_sub_[m[K’ was not declared in this scope
+[2.273s]    41 |             [01;31m[Kclicked_sub_[m[K = this->create_subscription<geometry_msgs::msg::PointStamped>(
+[2.273s]       |             [01;31m[K^~~~~~~~~~~~[m[K
+[2.315s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:46:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimer_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktimer_t[m[K’?
+[2.315s]    46 |             [01;31m[Ktimer_[m[K = this->create_wall_timer(
+[2.315s]       |             [01;31m[K^~~~~~[m[K
+[2.315s]       |             [32m[Ktimer_t[m[K
+[2.323s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:[m[K In member function ‘[01m[Kbool UnitManagerNode::worldToIdx(double, double, int&, int&) const[m[K’:
+[2.323s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:68:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap[m[K’ was not declared in this scope
+[2.324s]    68 |             ix=static_cast<int>(std::floor(x-[01;31m[Kmap[m[K.origin_x)/map_.resolution);
+[2.324s]       |                                              [01;31m[K^~~[m[K
+[2.324s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:68:46:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[2.324s] In file included from [01m[K/usr/include/c++/11/map:61[m[K,
+[2.324s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:24[m[K,
+[2.324s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.324s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.324s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.324s]                  from [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:1[m[K:
+[2.324s] [01m[K/usr/include/c++/11/bits/stl_map.h:100:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::map[m[K’
+[2.324s]   100 |     class [01;36m[Kmap[m[K
+[2.324s]       |           [01;36m[K^~~[m[K
+[2.324s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:24[m[K,
+[2.324s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.324s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.324s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.324s]                  from [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:1[m[K:
+[2.324s] [01m[K/usr/include/c++/11/map:78:13:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::pmr::map[m[K’
+[2.324s]    78 |       using [01;36m[Kmap[m[K
+[2.324s]       |             [01;36m[K^~~[m[K
+[2.330s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:68:60:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_[m[K’ was not declared in this scope
+[2.330s]    68 |             ix=static_cast<int>(std::floor(x-map.origin_x)/[01;31m[Kmap_[m[K.resolution);
+[2.330s]       |                                                            [01;31m[K^~~~[m[K
+[2.333s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:[m[K In member function ‘[01m[Kvoid UnitManagerNode::IdxToWorld(int, int, double&, double&)[m[K’:
+[2.333s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:74:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_[m[K’ was not declared in this scope
+[2.333s]    74 |              x = [01;31m[Kmap_[m[K.origin_x + (ix + 0.5) * map_.resolution;
+[2.333s]       |                  [01;31m[K^~~~[m[K
+[2.336s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:[m[K In member function ‘[01m[Kvoid UnitManagerNode::stepTowardsGoal()[m[K’:
+[2.336s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:78:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kix_[m[K’ was not declared in this scope
+[2.336s]    78 |             if([01;31m[Kix_[m[K == goal_ix_ && iy_ == goal_iy_) return;
+[2.336s]       |                [01;31m[K^~~[m[K
+[2.340s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:78:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_ix_[m[K’ was not declared in this scope
+[2.340s]    78 |             if(ix_ == [01;31m[Kgoal_ix_[m[K && iy_ == goal_iy_) return;
+[2.340s]       |                       [01;31m[K^~~~~~~~[m[K
+[2.344s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:78:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kiy_[m[K’ was not declared in this scope
+[2.344s]    78 |             if(ix_ == goal_ix_ && [01;31m[Kiy_[m[K == goal_iy_) return;
+[2.344s]       |                                   [01;31m[K^~~[m[K
+[2.348s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:78:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_iy_[m[K’ was not declared in this scope
+[2.348s]    78 |             if(ix_ == goal_ix_ && iy_ == [01;31m[Kgoal_iy_[m[K) return;
+[2.348s]       |                                          [01;31m[K^~~~~~~~[m[K
+[2.352s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:79:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kix_[m[K’ was not declared in this scope
+[2.353s]    79 |             if([01;31m[Kix_[m[K!=goal_ix_) ix_+=(goal_ix_ > ix_)? 1:-1;
+[2.353s]       |                [01;31m[K^~~[m[K
+[2.355s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:79:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_ix_[m[K’ was not declared in this scope
+[2.355s]    79 |             if(ix_!=[01;31m[Kgoal_ix_[m[K) ix_+=(goal_ix_ > ix_)? 1:-1;
+[2.355s]       |                     [01;31m[K^~~~~~~~[m[K
+[2.359s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:80:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kiy_[m[K’ was not declared in this scope
+[2.359s]    80 |             if([01;31m[Kiy_[m[K!=goal_iy_) iy_ +=(goal_iy_ > iy_)? 1:-1;
+[2.359s]       |                [01;31m[K^~~[m[K
+[2.363s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:80:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_iy_[m[K’ was not declared in this scope
+[2.363s]    80 |             if(iy_!=[01;31m[Kgoal_iy_[m[K) iy_ +=(goal_iy_ > iy_)? 1:-1;
+[2.363s]       |                     [01;31m[K^~~~~~~~[m[K
+[2.369s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:[m[K In member function ‘[01m[Kvoid UnitManagerNode::publishTF()[m[K’:
+[2.369s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:87:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kunit_name_[m[K’ was not declared in this scope; did you mean ‘[01m[Kget_name[m[K’?
+[2.369s]    87 |             t.child_frame_id  = [01;31m[Kunit_name_[m[K;
+[2.369s]       |                                 [01;31m[K^~~~~~~~~~[m[K
+[2.369s]       |                                 [32m[Kget_name[m[K
+[2.372s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:90:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kix_[m[K’ was not declared in this scope
+[2.372s]    90 |             idxToWorld([01;31m[Kix_[m[K, iy_, x, y);
+[2.372s]       |                        [01;31m[K^~~[m[K
+[2.376s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:90:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kiy_[m[K’ was not declared in this scope
+[2.376s]    90 |             idxToWorld(ix_, [01;31m[Kiy_[m[K, x, y);
+[2.376s]       |                             [01;31m[K^~~[m[K
+[2.379s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:90:13:[m[K [01;31m[Kerror: [m[K‘[01m[KidxToWorld[m[K’ was not declared in this scope; did you mean ‘[01m[KIdxToWorld[m[K’?
+[2.379s]    90 |             [01;31m[KidxToWorld[m[K(ix_, iy_, x, y);
+[2.379s]       |             [01;31m[K^~~~~~~~~~[m[K
+[2.379s]       |             [32m[KIdxToWorld[m[K
+[2.386s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:99:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_broadcaster_[m[K’ was not declared in this scope
+[2.386s]    99 |             [01;31m[Ktf_broadcaster_[m[K->sendTransform(t);
+[2.386s]       |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.389s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:[m[K In member function ‘[01m[Kvoid UnitManagerNode::publishMarker()[m[K’:
+[2.389s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:111:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kix_[m[K’ was not declared in this scope
+[2.390s]   111 |             idxToWorld([01;31m[Kix_[m[K, iy_, x, y);
+[2.390s]       |                        [01;31m[K^~~[m[K
+[2.393s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:111:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kiy_[m[K’ was not declared in this scope
+[2.393s]   111 |             idxToWorld(ix_, [01;31m[Kiy_[m[K, x, y);
+[2.393s]       |                             [01;31m[K^~~[m[K
+[2.396s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:111:13:[m[K [01;31m[Kerror: [m[K‘[01m[KidxToWorld[m[K’ was not declared in this scope; did you mean ‘[01m[KIdxToWorld[m[K’?
+[2.397s]   111 |             [01;31m[KidxToWorld[m[K(ix_, iy_, x, y);
+[2.397s]       |             [01;31m[K^~~~~~~~~~[m[K
+[2.397s]       |             [32m[KIdxToWorld[m[K
+[2.400s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:117:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_[m[K’ was not declared in this scope
+[2.400s]   117 |             m.scale.x = [01;31m[Kmap_[m[K.resolution * 0.7;  // 直径略小于一格
+[2.400s]       |                         [01;31m[K^~~~[m[K
+[2.406s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:124:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmarker_pub_[m[K’ was not declared in this scope
+[2.406s]   124 |             [01;31m[Kmarker_pub_[m[K->publish(m);
+[2.406s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[2.413s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:[m[K In member function ‘[01m[Kvoid UnitManagerNode::onClicked(geometry_msgs::msg::PointStamped_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.413s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:132:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_ix_[m[K’ was not declared in this scope
+[2.413s]   132 |             [01;31m[Kgoal_ix_[m[K = gx;
+[2.413s]       |             [01;31m[K^~~~~~~~[m[K
+[2.417s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:133:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_iy_[m[K’ was not declared in this scope
+[2.417s]   133 |             [01;31m[Kgoal_iy_[m[K = gy;
+[2.417s]       |             [01;31m[K^~~~~~~~[m[K
+[2.418s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:[m[K At global scope:
+[2.418s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:142:17:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kmap_[m[K’
+[2.418s]   142 |         MapData [01;31m[Kmap_[m[K;
+[2.418s]       |                 [01;31m[K^~~~[m[K
+[2.420s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:151:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[2.420s]   151 | [01;31m[K}[m[K;
+[2.421s]       | [01;31m[K^[m[K
+[4.452s] gmake[2]: *** [CMakeFiles/unit_manager_node.dir/build.make:76: CMakeFiles/unit_manager_node.dir/src/core/unit_manager_node.cpp.o] Error 1
+[4.452s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/unit_manager_node.dir/all] Error 2
+[4.453s] gmake: *** [Makefile:146: all] Error 2
+[4.463s] Invoked command in '/home/fvc/Desktop/robot_emblem/build/robot_emblem' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/fvc/Desktop/robot_emblem/build/robot_emblem -- -j2 -l2

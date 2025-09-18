@@ -1,4 +1,0 @@
-Invoking command in '/home/fvc/emblem_ws/build/robot_emblem': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/fvc/emblem_ws/src/robot_emblem -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/fvc/emblem_ws/install/robot_emblem
-Invoked command in '/home/fvc/emblem_ws/build/robot_emblem' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/fvc/emblem_ws/src/robot_emblem -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/fvc/emblem_ws/install/robot_emblem
-Invoking command in '/home/fvc/emblem_ws/build/robot_emblem': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/fvc/emblem_ws/build/robot_emblem -- -j2 -l2
-Invoked command in '/home/fvc/emblem_ws/build/robot_emblem' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/fvc/emblem_ws/build/robot_emblem -- -j2 -l2

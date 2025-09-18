@@ -1,0 +1,111 @@
+[0.014s] Invoking command in '/home/fvc/Desktop/robot_emblem/build/robot_emblem': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/fvc/Desktop/robot_emblem/build/robot_emblem -- -j2 -l2
+[0.057s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.171s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[0.199s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.202s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.211s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.218s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.231s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.263s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.265s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.359s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.401s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.454s] -- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.619s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.683s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.684s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/fvc/Desktop/robot_emblem/src/robot_emblem/include>
+[0.684s] -- Configured cppcheck exclude dirs and/or files: 
+[0.684s] -- Added test 'lint_cmake' to check CMake code style
+[0.686s] -- Added test 'uncrustify' to check C / C++ code style
+[0.686s] -- Configured uncrustify additional arguments: 
+[0.687s] -- Added test 'xmllint' to check XML markup files
+[0.687s] -- Configuring done
+[0.705s] -- Generating done
+[0.711s] -- Build files have been written to: /home/fvc/Desktop/robot_emblem/build/robot_emblem
+[0.759s] [35m[1mConsolidate compiler generated dependencies of target map_loader_node[0m
+[0.768s] [ 25%] [32mBuilding CXX object CMakeFiles/unit_manager_node.dir/src/core/unit_manager_node.cpp.o[0m
+[0.819s] [ 75%] Built target map_loader_node
+[3.696s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:21:27:[m[K [01;31m[Kerror: [m[Ktemporary of non-literal type ‘[01m[Krclcpp::Node[m[K’ in a constant expression
+[3.696s]    21 |         UnitManagerNode : [01;31m[KNode("unit_manager_node")[m[K{
+[3.696s]       |                           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.696s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.696s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[3.696s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.696s]                  from [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:1[m[K:
+[3.696s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:77:7:[m[K [01;36m[Knote: [m[K‘[01m[Krclcpp::Node[m[K’ is not literal because:
+[3.696s]    77 | class [01;36m[KNode[m[K : public std::enable_shared_from_this<Node>
+[3.696s]       |       [01;36m[K^~~~[m[K
+[3.696s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:77:7:[m[K [01;36m[Knote: [m[K  ‘[01m[Krclcpp::Node[m[K’ has a non-trivial destructor
+[3.696s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:21:52:[m[K [01;31m[Kerror: [m[Kdefault member initializer for unnamed bit-field
+[3.696s]    21 |         UnitManagerNode : Node("unit_manager_node")[01;31m[K{[m[K
+[3.696s]       |                                                    [01;31m[K^[m[K
+[3.696s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:50:9:[m[K [01;31m[Kerror: [m[Kname ‘[01m[KUnitManagerNode[m[K’ has incomplete type
+[3.696s]    50 |         [01;31m[K}[m[K
+[3.696s]       |         [01;31m[K^[m[K
+[3.699s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:50:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[3.699s]    50 |         [01;31m[K}[m[K
+[3.699s]       |         [01;31m[K^[m[K
+[3.699s]       |          [32m[K;[m[K
+[3.755s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:[m[K In member function ‘[01m[Kbool UnitManagerNode::worldToIdx(double, double, int&, int&) const[m[K’:
+[3.755s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:54:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap[m[K’ was not declared in this scope
+[3.756s]    54 |             ix=static_cast<int>(std::floor(x-[01;31m[Kmap[m[K.origin_x)/map_.resolution);
+[3.756s]       |                                              [01;31m[K^~~[m[K
+[3.757s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:54:46:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[3.757s] In file included from [01m[K/usr/include/c++/11/map:61[m[K,
+[3.757s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:24[m[K,
+[3.758s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.758s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.758s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.758s]                  from [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:1[m[K:
+[3.758s] [01m[K/usr/include/c++/11/bits/stl_map.h:100:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::map[m[K’
+[3.758s]   100 |     class [01;36m[Kmap[m[K
+[3.758s]       |           [01;36m[K^~~[m[K
+[3.759s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:24[m[K,
+[3.759s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.759s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.759s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.759s]                  from [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:1[m[K:
+[3.759s] [01m[K/usr/include/c++/11/map:78:13:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::pmr::map[m[K’
+[3.759s]    78 |       using [01;36m[Kmap[m[K
+[3.759s]       |             [01;36m[K^~~[m[K
+[4.154s] In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+[4.154s]                  from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+[4.154s]                  from [01m[K/usr/include/c++/11/memory:64[m[K,
+[4.154s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[4.154s]                  from [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:1[m[K:
+[4.154s] /usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = UnitManagerNode; _Args = {}; _Tp = UnitManagerNode][m[K’:
+[4.154s] [01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = UnitManagerNode; _Args = {}; _Tp = UnitManagerNode; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<UnitManagerNode>][m[K’
+[4.155s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {}; _Tp = UnitManagerNode; _Alloc = std::allocator<UnitManagerNode>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[4.155s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = UnitManagerNode; _Alloc = std::allocator<UnitManagerNode>; _Args = {}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[4.155s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<UnitManagerNode>; _Args = {}; _Tp = UnitManagerNode; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[4.155s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<UnitManagerNode>; _Args = {}; _Tp = UnitManagerNode][m[K’
+[4.155s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = UnitManagerNode; _Alloc = std::allocator<UnitManagerNode>; _Args = {}][m[K’
+[4.157s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = UnitManagerNode; _Args = {}][m[K’
+[4.157s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:86:51:[m[K   required from here
+[4.157s] [01m[K/usr/include/c++/11/ext/new_allocator.h:162:11:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[KUnitManagerNode::UnitManagerNode()[m[K’
+[4.157s]   162 |         { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+[4.157s]       |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.157s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:19:7:[m[K [01;36m[Knote: [m[K‘[01m[KUnitManagerNode::UnitManagerNode()[m[K’ is implicitly deleted because the default definition would be ill-formed:
+[4.157s]    19 | class [01;36m[KUnitManagerNode[m[K : public rclcpp::Node{
+[4.157s]       |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[4.157s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:19:7:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::Node()[m[K’
+[4.157s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[4.158s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[4.158s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.158s]                  from [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:1[m[K:
+[4.158s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1294:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const rclcpp::Node&, const string&)[m[K’
+[4.158s]  1294 |   [01;36m[KNode[m[K(
+[4.158s]       |   [01;36m[K^~~~[m[K
+[4.158s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1294:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[4.158s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:101:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const string&, const string&, const rclcpp::NodeOptions&)[m[K’
+[4.158s]   101 |   explicit [01;36m[KNode[m[K(
+[4.158s]       |            [01;36m[K^~~~[m[K
+[4.158s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:101:12:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[4.158s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:89:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const string&, const rclcpp::NodeOptions&)[m[K’
+[4.158s]    89 |   explicit [01;36m[KNode[m[K(
+[4.158s]       |            [01;36m[K^~~~[m[K
+[4.158s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:89:12:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[4.253s] gmake[2]: *** [CMakeFiles/unit_manager_node.dir/build.make:76: CMakeFiles/unit_manager_node.dir/src/core/unit_manager_node.cpp.o] Error 1
+[4.255s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/unit_manager_node.dir/all] Error 2
+[4.256s] gmake: *** [Makefile:146: all] Error 2
+[4.257s] Invoked command in '/home/fvc/Desktop/robot_emblem/build/robot_emblem' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/fvc/Desktop/robot_emblem/build/robot_emblem -- -j2 -l2

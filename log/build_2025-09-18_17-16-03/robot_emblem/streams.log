@@ -1,0 +1,9 @@
+[0.032s] Invoking command in '/home/fvc/Desktop/robot_emblem/build/robot_emblem': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/fvc/Desktop/robot_emblem/build/robot_emblem -- -j2 -l2
+[0.058s] [31mCMake Error at CMakeLists.txt:38:
+[0.058s]   Parse error.  Function missing ending ")".  End of file reached.
+[0.058s] 
+[0.058s] [0m
+[0.059s] -- Configuring incomplete, errors occurred!
+[0.059s] See also "/home/fvc/Desktop/robot_emblem/build/robot_emblem/CMakeFiles/CMakeOutput.log".
+[0.060s] gmake: *** [Makefile:267: cmake_check_build_system] Error 1
+[0.063s] Invoked command in '/home/fvc/Desktop/robot_emblem/build/robot_emblem' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/fvc/Desktop/robot_emblem/build/robot_emblem -- -j2 -l2

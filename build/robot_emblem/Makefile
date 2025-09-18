@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/fvc/emblem_ws/src/robot_emblem
+CMAKE_SOURCE_DIR = /home/fvc/Desktop/robot_emblem/src/robot_emblem
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/fvc/emblem_ws/build/robot_emblem
+CMAKE_BINARY_DIR = /home/fvc/Desktop/robot_emblem/build/robot_emblem
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fvc/emblem_ws/build/robot_emblem/CMakeFiles /home/fvc/emblem_ws/build/robot_emblem//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fvc/Desktop/robot_emblem/build/robot_emblem/CMakeFiles /home/fvc/Desktop/robot_emblem/build/robot_emblem//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fvc/emblem_ws/build/robot_emblem/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fvc/Desktop/robot_emblem/build/robot_emblem/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -210,6 +210,19 @@ map_loader_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/map_loader_node.dir/build.make CMakeFiles/map_loader_node.dir/build
 .PHONY : map_loader_node/fast
 
+#=============================================================================
+# Target rules for targets named unit_manager_node
+
+# Build rule for target.
+unit_manager_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 unit_manager_node
+.PHONY : unit_manager_node
+
+# fast build rule for target.
+unit_manager_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_manager_node.dir/build.make CMakeFiles/unit_manager_node.dir/build
+.PHONY : unit_manager_node/fast
+
 src/core/map_loader_node.o: src/core/map_loader_node.cpp.o
 .PHONY : src/core/map_loader_node.o
 
@@ -234,6 +247,30 @@ src/core/map_loader_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/map_loader_node.dir/build.make CMakeFiles/map_loader_node.dir/src/core/map_loader_node.cpp.s
 .PHONY : src/core/map_loader_node.cpp.s
 
+src/core/unit_manager_node.o: src/core/unit_manager_node.cpp.o
+.PHONY : src/core/unit_manager_node.o
+
+# target to build an object file
+src/core/unit_manager_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_manager_node.dir/build.make CMakeFiles/unit_manager_node.dir/src/core/unit_manager_node.cpp.o
+.PHONY : src/core/unit_manager_node.cpp.o
+
+src/core/unit_manager_node.i: src/core/unit_manager_node.cpp.i
+.PHONY : src/core/unit_manager_node.i
+
+# target to preprocess a source file
+src/core/unit_manager_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_manager_node.dir/build.make CMakeFiles/unit_manager_node.dir/src/core/unit_manager_node.cpp.i
+.PHONY : src/core/unit_manager_node.cpp.i
+
+src/core/unit_manager_node.s: src/core/unit_manager_node.cpp.s
+.PHONY : src/core/unit_manager_node.s
+
+# target to generate assembly for a file
+src/core/unit_manager_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_manager_node.dir/build.make CMakeFiles/unit_manager_node.dir/src/core/unit_manager_node.cpp.s
+.PHONY : src/core/unit_manager_node.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -250,9 +287,13 @@ help:
 	@echo "... robot_emblem_uninstall"
 	@echo "... uninstall"
 	@echo "... map_loader_node"
+	@echo "... unit_manager_node"
 	@echo "... src/core/map_loader_node.o"
 	@echo "... src/core/map_loader_node.i"
 	@echo "... src/core/map_loader_node.s"
+	@echo "... src/core/unit_manager_node.o"
+	@echo "... src/core/unit_manager_node.i"
+	@echo "... src/core/unit_manager_node.s"
 .PHONY : help
 
 
