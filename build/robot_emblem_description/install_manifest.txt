@@ -1,0 +1,16 @@
+/home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/urdf/fe_unit.urdf.xacro
+/home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/ament_index/resource_index/package_run_dependencies/robot_emblem_description
+/home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/ament_index/resource_index/parent_prefix_path/robot_emblem_description
+/home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/environment/ament_prefix_path.sh
+/home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/environment/ament_prefix_path.dsv
+/home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/environment/path.sh
+/home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/environment/path.dsv
+/home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/local_setup.bash
+/home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/local_setup.sh
+/home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/local_setup.zsh
+/home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/local_setup.dsv
+/home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/package.dsv
+/home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/ament_index/resource_index/packages/robot_emblem_description
+/home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/cmake/robot_emblem_descriptionConfig.cmake
+/home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/cmake/robot_emblem_descriptionConfig-version.cmake
+/home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/package.xml

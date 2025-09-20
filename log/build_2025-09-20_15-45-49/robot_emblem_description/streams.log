@@ -1,0 +1,45 @@
+[0.017s] Invoking command in '/home/fvc/Desktop/robot_emblem/build/robot_emblem_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/fvc/Desktop/robot_emblem/src/robot_emblem_description -DCMAKE_INSTALL_PREFIX=/home/fvc/Desktop/robot_emblem/install/robot_emblem_description
+[0.310s] -- The C compiler identification is GNU 11.4.0
+[0.499s] -- The CXX compiler identification is GNU 11.4.0
+[0.514s] -- Detecting C compiler ABI info
+[0.603s] -- Detecting C compiler ABI info - done
+[0.610s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.611s] -- Detecting C compile features
+[0.612s] -- Detecting C compile features - done
+[0.617s] -- Detecting CXX compiler ABI info
+[0.743s] -- Detecting CXX compiler ABI info - done
+[0.752s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.755s] -- Detecting CXX compile features
+[0.755s] -- Detecting CXX compile features - done
+[0.771s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.014s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.191s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.347s] -- Added test 'lint_cmake' to check CMake code style
+[1.351s] -- Added test 'xmllint' to check XML markup files
+[1.357s] -- Configuring done
+[1.361s] -- Generating done
+[1.364s] -- Build files have been written to: /home/fvc/Desktop/robot_emblem/build/robot_emblem_description
+[1.373s] Invoked command in '/home/fvc/Desktop/robot_emblem/build/robot_emblem_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/fvc/Desktop/robot_emblem/src/robot_emblem_description -DCMAKE_INSTALL_PREFIX=/home/fvc/Desktop/robot_emblem/install/robot_emblem_description
+[1.378s] Invoking command in '/home/fvc/Desktop/robot_emblem/build/robot_emblem_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/fvc/Desktop/robot_emblem/build/robot_emblem_description -- -j2 -l2
+[1.471s] Invoked command in '/home/fvc/Desktop/robot_emblem/build/robot_emblem_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/fvc/Desktop/robot_emblem/build/robot_emblem_description -- -j2 -l2
+[1.475s] Invoking command in '/home/fvc/Desktop/robot_emblem/build/robot_emblem_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/fvc/Desktop/robot_emblem/build/robot_emblem_description
+[1.499s] -- Install configuration: ""
+[1.500s] -- Installing: /home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/urdf
+[1.500s] -- Installing: /home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/urdf/fe_unit.urdf.xacro
+[1.503s] -- Installing: /home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/launch
+[1.503s] -- Installing: /home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/ament_index/resource_index/package_run_dependencies/robot_emblem_description
+[1.503s] -- Installing: /home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/ament_index/resource_index/parent_prefix_path/robot_emblem_description
+[1.503s] -- Installing: /home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/environment/ament_prefix_path.sh
+[1.503s] -- Installing: /home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/environment/ament_prefix_path.dsv
+[1.503s] -- Installing: /home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/environment/path.sh
+[1.503s] -- Installing: /home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/environment/path.dsv
+[1.503s] -- Installing: /home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/local_setup.bash
+[1.503s] -- Installing: /home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/local_setup.sh
+[1.503s] -- Installing: /home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/local_setup.zsh
+[1.505s] -- Installing: /home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/local_setup.dsv
+[1.505s] -- Installing: /home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/package.dsv
+[1.505s] -- Installing: /home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/ament_index/resource_index/packages/robot_emblem_description
+[1.506s] -- Installing: /home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/cmake/robot_emblem_descriptionConfig.cmake
+[1.507s] -- Installing: /home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/cmake/robot_emblem_descriptionConfig-version.cmake
+[1.507s] -- Installing: /home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/package.xml
+[1.513s] Invoked command in '/home/fvc/Desktop/robot_emblem/build/robot_emblem_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/fvc/Desktop/robot_emblem/build/robot_emblem_description

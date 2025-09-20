@@ -22,7 +22,8 @@ class UnitManagerNode : public rclcpp::Node{
             this->declare_parameter<std::string>("map_yaml","maps/demo_map.yaml");
             this->declare_parameter<int>("unit_ix",0);
             this->declare_parameter<int>("unit_iy",0);
-            unit_name_ = "unit/alpha";
+            // unit_name_ = "unit/alpha";
+            unit_name_ = "base_link";
 
             std::string yaml_path = this->get_parameter("map_yaml").as_string();
             if (!loadMap(yaml_path, map_)) {
@@ -84,7 +85,7 @@ class UnitManagerNode : public rclcpp::Node{
             geometry_msgs::msg::TransformStamped t;
             t.header.stamp = this->now();
             t.header.frame_id = "map";
-            t.child_frame_id  = unit_name_;
+            t.child_frame_id  = "base_link";
 
             double x, y;
             idxToWorld(ix_, iy_, x, y);

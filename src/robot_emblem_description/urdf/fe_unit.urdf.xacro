@@ -1,0 +1,179 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="fe_unit">
+
+  <!-- ======= 可调参数 ======= -->
+<xacro:property name="scale"        value="1.0"/>
+<xacro:property name="body_color"   value="0.15 0.5 0.95 1"/>
+<xacro:property name="accent_color" value="1 0.85 0.2 1"/>
+<xacro:property name="eye_color"    value="0.95 1 1 1"/>
+<xacro:property name="dark"         value="0.1 0.1 0.12 1"/>
+  <!-- 简化惯量 -->
+  <xacro:macro name="simple_inertia" params="mass">
+    <inertial>
+      <mass value="${mass}"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <!-- 各向相同的小惯量，防止 RSP/URDF 警告 -->
+      <inertia ixx="0.02" ixy="0" ixz="0" iyy="0.02" iyz="0" izz="0.02"/>
+    </inertial>
+  </xacro:macro>
+
+  <!-- ======= 根链接：base_link ======= -->
+  <link name="base_link">
+    <!-- “底座”圆柱 -->
+    <visual>
+      <origin xyz="0 0 ${0.05 * scale}" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="${0.18 * scale}" length="${0.10 * scale}"/>
+      </geometry>
+      <material name="dark"><color rgba="${dark}"/></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 ${0.05 * scale}" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="${0.18 * scale}" length="${0.10 * scale}"/>
+      </geometry>
+    </collision>
+    <xacro:simple_inertia mass="${2.0 * scale}"/>
+  </link>
+
+  <!-- ======= 躯干（彩色圆柱） ======= -->
+  <link name="torso_link">
+    <visual>
+      <origin xyz="0 0 ${0.33 * scale}" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="${0.16 * scale}" length="${0.46 * scale}"/>
+      </geometry>
+      <material name="body">
+        <color rgba="${body_color}"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 ${0.33 * scale}" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="${0.16 * scale}" length="${0.46 * scale}"/>
+      </geometry>
+    </collision>
+    <xacro:simple_inertia mass="${3.0 * scale}"/>
+  </link>
+
+  <joint name="base_to_torso" type="fixed">
+    <parent link="base_link"/>
+    <child  link="torso_link"/>
+    <origin xyz="0 0 ${0.10 * scale}" rpy="0 0 0"/>
+  </joint>
+
+  <!-- ======= 头罩（半透明方盒） ======= -->
+  <link name="visor_link">
+    <visual>
+      <origin xyz="0 0 ${0.62 * scale}" rpy="0 0 0"/>
+      <geometry>
+        <box size="${0.22 * scale} ${0.22 * scale} ${0.18 * scale}"/>
+      </geometry>
+      <material name="visor">
+        <color rgba="0.2 0.6 1.0 0.35"/>  <!-- 半透明 -->
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 ${0.62 * scale}" rpy="0 0 0"/>
+      <geometry>
+        <box size="${0.22 * scale} ${0.22 * scale} ${0.18 * scale}"/>
+      </geometry>
+    </collision>
+    <xacro:simple_inertia mass="${0.8 * scale}"/>
+  </link>
+
+  <joint name="torso_to_visor" type="fixed">
+    <parent link="torso_link"/>
+    <child  link="visor_link"/>
+    <origin xyz="0 0 ${0.39 * scale}" rpy="0 0 0"/>
+  </joint>
+
+  <!-- ======= 眼睛（两颗小球） ======= -->
+  <link name="eye_left">
+    <visual>
+      <origin xyz="${0.05 * scale} ${0.05 * scale} ${0.62 * scale}" rpy="0 0 0"/>
+      <geometry><sphere radius="${0.02 * scale}"/></geometry>
+      <material name="eye"><color rgba="${eye_color}"/></material>
+    </visual>
+    <xacro:simple_inertia mass="${0.05 * scale}"/>
+  </link>
+  <joint name="visor_to_eye_left" type="fixed">
+    <parent link="visor_link"/>
+    <child  link="eye_left"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <link name="eye_right">
+    <visual>
+      <origin xyz="${0.05 * scale} ${-0.05 * scale} ${0.62 * scale}" rpy="0 0 0"/>
+      <geometry><sphere radius="${0.02 * scale}"/></geometry>
+      <material name="eye"><color rgba="${eye_color}"/></material>
+    </visual>
+    <xacro:simple_inertia mass="${0.05 * scale}"/>
+  </link>
+  <joint name="visor_to_eye_right" type="fixed">
+    <parent link="visor_link"/>
+    <child  link="eye_right"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <!-- ======= 手臂（两侧圆柱） ======= -->
+  <link name="arm_left">
+    <visual>
+      <origin xyz="0 ${0.20 * scale} ${0.40 * scale}" rpy="0 1.5708 0"/>
+      <geometry><cylinder radius="${0.03 * scale}" length="${0.22 * scale}"/></geometry>
+      <material name="accent"><color rgba="${accent_color}"/></material>
+    </visual>
+    <xacro:simple_inertia mass="${0.3 * scale}"/>
+  </link>
+  <joint name="torso_to_arm_left" type="fixed">
+    <parent link="torso_link"/>
+    <child  link="arm_left"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <link name="arm_right">
+    <visual>
+      <origin xyz="0 ${-0.20 * scale} ${0.40 * scale}" rpy="0 1.5708 0"/>
+      <geometry><cylinder radius="${0.03 * scale}" length="${0.22 * scale}"/></geometry>
+      <material name="accent"><color rgba="${accent_color}"/></material>
+    </visual>
+    <xacro:simple_inertia mass="${0.3 * scale}"/>
+  </link>
+  <joint name="torso_to_arm_right" type="fixed">
+    <parent link="torso_link"/>
+    <child  link="arm_right"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <!-- ======= 背包（盒子） ======= -->
+  <link name="backpack">
+    <visual>
+      <origin xyz="${-0.10 * scale} 0 ${0.40 * scale}" rpy="0 0 0"/>
+      <geometry><box size="${0.12 * scale} ${0.16 * scale} ${0.22 * scale}"/></geometry>
+      <material name="dark"><color rgba="${dark}"/></material>
+    </visual>
+    <xacro:simple_inertia mass="${0.4 * scale}"/>
+  </link>
+  <joint name="torso_to_backpack" type="fixed">
+    <parent link="torso_link"/>
+    <child  link="backpack"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <!-- ======= 能源核心（发光球体） ======= -->
+  <link name="core">
+    <visual>
+      <origin xyz="${0.0 * scale} ${0.0 * scale} ${0.33 * scale}" rpy="0 0 0"/>
+      <geometry><sphere radius="${0.045 * scale}"/></geometry>
+      <material name="core"><color rgba="${accent_color}"/></material>
+    </visual>
+    <xacro:simple_inertia mass="${0.1 * scale}"/>
+  </link>
+  <joint name="torso_to_core" type="fixed">
+    <parent link="torso_link"/>
+    <child  link="core"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+</robot>
