@@ -6,6 +6,7 @@ A ROS 2 demo package inspired by *Fire Emblem*-style grid maps.   This project b
 
 ### -----Day 2 + 3------
 <img width="522" height="320" alt="image" src="https://github.com/user-attachments/assets/d670b98f-ba2a-47e5-a2b8-6bd9559d22cc" />
+
 ### Day 2
 - Implemented a simple movement logic.  
 - Used RViz’s **Publish Point** tool to publish clicked points.  
