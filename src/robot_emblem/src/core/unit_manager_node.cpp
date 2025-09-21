@@ -3,10 +3,18 @@
 #include <geometry_msgs/msg/point_stamped.hpp>
 #include <geometry_msgs/msg/transform_stamped.hpp>
 #include <tf2_ros/transform_broadcaster.h>
+#include <visualization_msgs/msg/marker_array.hpp>
 #include <yaml-cpp/yaml.h>
 #include <fstream>
 #include <cmath>
+#include <queue>
+#include <set>
 #include <string>
+
+
+struct Cell{
+    int ix,iy,cost;
+};
 
 struct MapData {
   int width = 0;
@@ -37,8 +45,9 @@ class UnitManagerNode : public rclcpp::Node{
             goal_iy_ = iy_;
 
             marker_pub_ = this->create_publisher<visualization_msgs::msg::Marker>("/unit_marker",1);
+            auto qos = rclcpp::QoS(1).transient_local();  // 带记忆 QoS，新订阅者也能看到
+            move_area_pub_ = this->create_publisher<visualization_msgs::msg::MarkerArray>("/reachable", qos);
             tf_broadcaster_ = std::make_unique<tf2_ros::TransformBroadcaster>(this);
-
             clicked_sub_ = this->create_subscription<geometry_msgs::msg::PointStamped>(
             "/clicked_point", 10,
             std::bind(&UnitManagerNode::onClicked, this, std::placeholders::_1));
@@ -78,7 +87,7 @@ class UnitManagerNode : public rclcpp::Node{
         void stepTowardsGoal(){
             if(ix_ == goal_ix_ && iy_ == goal_iy_) return;
             if(ix_!=goal_ix_) ix_+=(goal_ix_ > ix_)? 1:-1;
-            if(iy_!=goal_iy_) iy_ +=(goal_iy_ > iy_)? 1:-1;
+           else if(iy_!=goal_iy_) iy_ +=(goal_iy_ > iy_)? 1:-1;
         }
 
         void publishTF() {
@@ -124,17 +133,98 @@ class UnitManagerNode : public rclcpp::Node{
 
             marker_pub_->publish(m);
      }
+
+     void publishMoveArea(){
+        //Bfs frontier
+        std::queue<Cell> q;
+        std::set<std::pair<int,int>> visited;
+
+        q.push({ix_,iy_,0});
+        visited.insert({ix_,iy_});
+
+        visualization_msgs::msg::Marker reach, block;
+
+        auto makeMarker = [&](int id, const std::string& ns,
+                        float r, float g, float b, float a){
+                                visualization_msgs::msg::Marker m;
+            m.header.frame_id = "map";
+            m.header.stamp = this->now();
+            m.ns = ns;
+            m.id = id;
+            m.type = visualization_msgs::msg::Marker::CUBE_LIST;
+            m.action = visualization_msgs::msg::Marker::ADD;
+            m.scale.x = map_.resolution * 0.95;
+            m.scale.y = map_.resolution * 0.95;
+            m.scale.z = 0.1;
+            m.color.r = r; m.color.g = g; m.color.b = b; m.color.a = a;
+            return m;
+                        };
+            reach = makeMarker(0, "reachable", 0.0f, 1.0f, 0.0f, 0.4f);  // green
+            block = makeMarker(1, "blocked",   1.0f, 0.0f, 0.0f, 0.2f);  // red   
+            //BFS loop
+            while(!q.empty()){
+                Cell cur = q.front(); q.pop();
+                
+                double wx,wy;
+                idxToWorld(cur.ix,cur.iy,wx,wy);
+
+                geometry_msgs::msg::Point p;
+                p.x = wx; p.y = wy; p.z = 0.01;
+
+                if(cur.cost <= move_points_)
+                {
+                    reach.points.push_back(p);
+                    reachable_set_.insert({cur.ix, cur.iy});  // record grid index
+                }else{
+                    block.points.push_back(p);
+                }
+                if(cur.cost < move_points_){
+                     // 4-connected Manhattan neighbors
+                const int dirs[4][2] = {{1,0},{-1,0},{0,1},{0,-1}};
+                for(auto &d:dirs){
+                    int nx = cur.ix + d[0];
+                    int ny = cur.iy + d[1];
+                    if( nx < 0 || ny < 0 || nx >= map_.width || ny >= map_.height) continue;
+                    if (visited.count({nx,ny})) continue;
+
+                    visited.insert({nx,ny});
+                    q.push({nx, ny, cur.cost + 1});
+                }
+
+                }
+            }
+            visualization_msgs::msg::MarkerArray arr;
+            arr.markers.push_back(reach);
+            arr.markers.push_back(block);
+            move_area_pub_->publish(arr);
+     }
+
+
         void onClicked(const geometry_msgs::msg::PointStamped::SharedPtr msg) {
             int gx, gy;
             if (!worldToIdx(msg->point.x, msg->point.y, gx, gy)) {
             RCLCPP_WARN(get_logger(), "Clicked point out of map.");
             return;
             }
+            
+            if (!reachable_set_.count({gx, gy})) {
+            RCLCPP_INFO(get_logger(), "Cell (%d,%d) NOT reachable this turn.", gx, gy);
+            return;
+            }
+
             goal_ix_ = gx;
             goal_iy_ = gy;
             RCLCPP_INFO(get_logger(), "Goal set to cell (%d,%d)", goal_ix_, goal_iy_);
         }
+        void onTurnBegin() {
+           publishMoveArea();
+        }
+
         void onTimer() {
+            if (!move_area_first_pub_) {
+                    publishMoveArea();      // publish reachable area
+                    // move_area_first_pub_ = true;
+                }
             stepTowardsGoal();
             publishTF();
             publishMarker();
@@ -142,13 +232,20 @@ class UnitManagerNode : public rclcpp::Node{
         
         MapData map_;
         std::string unit_name_;
+        int move_points_{4};   // move
         int ix_{0}, iy_{0};
         int goal_ix_{0}, goal_iy_{0};
-
+        double cur_x_{0.0}, cur_y_{0.0};
+        double linear_speed_;
+        std::vector<std::vector<int>> dist_; 
+        std::set<std::pair<int,int>> reachable_set_;
+        bool move_area_first_pub_{false};  // 
         rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr marker_pub_;
+        rclcpp::Publisher<visualization_msgs::msg::MarkerArray>::SharedPtr move_area_pub_;
         rclcpp::Subscription<geometry_msgs::msg::PointStamped>::SharedPtr clicked_sub_;
         std::unique_ptr<tf2_ros::TransformBroadcaster> tf_broadcaster_;
         rclcpp::TimerBase::SharedPtr timer_;
+        
 };
 int main(int argc,char** argv){
     rclcpp::init(argc,argv);

@@ -1,0 +1,32 @@
+[0.053s] Invoking command in '/home/fvc/Desktop/robot_emblem/build/robot_emblem': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/fvc/Desktop/robot_emblem/build/robot_emblem -- -j2 -l2
+[0.194s] [35m[1mConsolidate compiler generated dependencies of target unit_manager_node[0m
+[0.260s] [ 25%] [32mBuilding CXX object CMakeFiles/unit_manager_node.dir/src/core/unit_manager_node.cpp.o[0m
+[0.261s] [ 75%] Built target map_loader_node
+[11.426s] [100%] [32m[1mLinking CXX executable unit_manager_node[0m
+[11.862s] [100%] Built target unit_manager_node
+[11.886s] Invoked command in '/home/fvc/Desktop/robot_emblem/build/robot_emblem' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/fvc/Desktop/robot_emblem/build/robot_emblem -- -j2 -l2
+[11.889s] Invoking command in '/home/fvc/Desktop/robot_emblem/build/robot_emblem': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/fvc/Desktop/robot_emblem/build/robot_emblem
+[11.907s] -- Install configuration: ""
+[11.907s] -- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/launch
+[11.907s] -- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/launch/demo.launch.py
+[11.907s] -- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/maps
+[11.908s] -- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/maps/demo_map.yaml
+[11.908s] -- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem/lib/robot_emblem/map_loader_node
+[11.908s] -- Installing: /home/fvc/Desktop/robot_emblem/install/robot_emblem/lib/robot_emblem/unit_manager_node
+[11.915s] -- Set runtime path of "/home/fvc/Desktop/robot_emblem/install/robot_emblem/lib/robot_emblem/unit_manager_node" to ""
+[11.915s] -- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem/share/ament_index/resource_index/package_run_dependencies/robot_emblem
+[11.916s] -- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem/share/ament_index/resource_index/parent_prefix_path/robot_emblem
+[11.916s] -- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/environment/ament_prefix_path.sh
+[11.916s] -- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/environment/ament_prefix_path.dsv
+[11.916s] -- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/environment/path.sh
+[11.916s] -- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/environment/path.dsv
+[11.917s] -- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/local_setup.bash
+[11.917s] -- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/local_setup.sh
+[11.918s] -- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/local_setup.zsh
+[11.918s] -- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/local_setup.dsv
+[11.919s] -- Installing: /home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/package.dsv
+[11.919s] -- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem/share/ament_index/resource_index/packages/robot_emblem
+[11.920s] -- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/cmake/robot_emblemConfig.cmake
+[11.920s] -- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/cmake/robot_emblemConfig-version.cmake
+[11.920s] -- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/package.xml
+[11.924s] Invoked command in '/home/fvc/Desktop/robot_emblem/build/robot_emblem' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/fvc/Desktop/robot_emblem/build/robot_emblem

@@ -1,0 +1,3 @@
+[ 50%] Built target map_loader_node
+[35m[1mConsolidate compiler generated dependencies of target unit_manager_node[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/unit_manager_node.dir/src/core/unit_manager_node.cpp.o[0m

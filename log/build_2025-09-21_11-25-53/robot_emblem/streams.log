@@ -1,0 +1,59 @@
+[0.022s] Invoking command in '/home/fvc/Desktop/robot_emblem/build/robot_emblem': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/fvc/Desktop/robot_emblem/build/robot_emblem -- -j2 -l2
+[0.190s] [35m[1mConsolidate compiler generated dependencies of target unit_manager_node[0m
+[0.256s] [ 50%] Built target map_loader_node
+[0.286s] [ 75%] [32mBuilding CXX object CMakeFiles/unit_manager_node.dir/src/core/unit_manager_node.cpp.o[0m
+[3.140s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:230:52:[m[K [01;31m[Kerror: [m[K‘[01m[KMarkerArray[m[K’ is not a member of ‘[01m[Kvisualization_msgs::msg[m[K’
+[3.140s]   230 |         rclcpp::Publisher<visualization_msgs::msg::[01;31m[KMarkerArray[m[K>::SharedPtr move_area_pub_;
+[3.140s]       |                                                    [01;31m[K^~~~~~~~~~~[m[K
+[3.140s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:230:63:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.140s]   230 |         rclcpp::Publisher<visualization_msgs::msg::MarkerArray[01;31m[K>[m[K::SharedPtr move_area_pub_;
+[3.140s]       |                                                               [01;31m[K^[m[K
+[3.141s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:230:66:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[3.142s]   230 |         rclcpp::Publisher<visualization_msgs::msg::MarkerArray>::[01;31m[KSharedPtr[m[K move_area_pub_;
+[3.142s]       |                                                                  [01;31m[K^~~~~~~~~[m[K
+[3.142s]       |                                                                           [32m[K;[m[K
+[3.143s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:230:76:[m[K [01;31m[Kerror: [m[K‘[01m[Kmove_area_pub_[m[K’ does not name a type
+[3.143s]   230 |         rclcpp::Publisher<visualization_msgs::msg::MarkerArray>::SharedPtr [01;31m[Kmove_area_pub_[m[K;
+[3.143s]       |                                                                            [01;31m[K^~~~~~~~~~~~~~[m[K
+[3.211s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:[m[K In constructor ‘[01m[KUnitManagerNode::UnitManagerNode()[m[K’:
+[3.211s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:47:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmove_area_pub_[m[K’ was not declared in this scope
+[3.211s]    47 |             [01;31m[Kmove_area_pub_[m[K = this->create_publisher<visualization_msgs::msg::MarkerArray>("/Reachable",1);
+[3.211s]       |             [01;31m[K^~~~~~~~~~~~~~[m[K
+[3.212s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:47:78:[m[K [01;31m[Kerror: [m[K‘[01m[KMarkerArray[m[K’ is not a member of ‘[01m[Kvisualization_msgs::msg[m[K’
+[3.213s]    47 |             move_area_pub_ = this->create_publisher<visualization_msgs::msg::[01;31m[KMarkerArray[m[K>("/Reachable",1);
+[3.213s]       |                                                                              [01;31m[K^~~~~~~~~~~[m[K
+[3.213s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:47:90:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KUnitManagerNode::create_publisher<<expression error> >(const char [11], int)[m[K’
+[3.213s]    47 |             move_area_pub_ = [01;31m[Kthis->create_publisher<visualization_msgs::msg::MarkerArray>("/Reachable",1)[m[K;
+[3.213s]       |                              [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[3.213s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321[m[K,
+[3.213s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.213s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[3.213s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.213s]                  from [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:1[m[K:
+[3.213s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:73:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+[3.213s]    73 | [01;36m[KNode[m[K::create_publisher(
+[3.213s]       | [01;36m[K^~~~[m[K
+[3.213s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:73:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.213s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:47:90:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.213s]    47 |             move_area_pub_ = [01;31m[Kthis->create_publisher<visualization_msgs::msg::MarkerArray>("/Reachable",1)[m[K;
+[3.213s]       |                              [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[3.258s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:[m[K In member function ‘[01m[Kvoid UnitManagerNode::publishMoveArea()[m[K’:
+[3.258s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:146:43:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kint id[m[K’
+[3.258s]   146 |         auto makeMarker = [&](int id, [01;31m[Kint id[m[K, const std::string& ns,
+[3.258s]       |                                       [01;31m[K~~~~^~[m[K
+[3.258s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:146:35:[m[K [01;36m[Knote: [m[K‘[01m[Kint id[m[K’ previously declared here
+[3.258s]   146 |         auto makeMarker = [&]([01;36m[Kint id[m[K, int id, const std::string& ns,
+[3.258s]       |                               [01;36m[K~~~~^~[m[K
+[3.258s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:194:38:[m[K [01;31m[Kerror: [m[K‘[01m[KMarkerArray[m[K’ is not a member of ‘[01m[Kvisualization_msgs::msg[m[K’
+[3.258s]   194 |             visualization_msgs::msg::[01;31m[KMarkerArray[m[K arr;
+[3.258s]       |                                      [01;31m[K^~~~~~~~~~~[m[K
+[3.263s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:195:13:[m[K [01;31m[Kerror: [m[K‘[01m[Karr[m[K’ was not declared in this scope
+[3.263s]   195 |             [01;31m[Karr[m[K.markers.push_back(reach);
+[3.263s]       |             [01;31m[K^~~[m[K
+[3.268s] [01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:197:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmove_area_pub_[m[K’ was not declared in this scope
+[3.268s]   197 |             [01;31m[Kmove_area_pub_[m[K->publish(arr);
+[3.268s]       |             [01;31m[K^~~~~~~~~~~~~~[m[K
+[6.011s] gmake[2]: *** [CMakeFiles/unit_manager_node.dir/build.make:76: CMakeFiles/unit_manager_node.dir/src/core/unit_manager_node.cpp.o] Error 1
+[6.011s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/unit_manager_node.dir/all] Error 2
+[6.012s] gmake: *** [Makefile:146: all] Error 2
+[6.014s] Invoked command in '/home/fvc/Desktop/robot_emblem/build/robot_emblem' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/fvc/Desktop/robot_emblem/build/robot_emblem -- -j2 -l2

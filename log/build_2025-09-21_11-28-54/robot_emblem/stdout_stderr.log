@@ -1,0 +1,13 @@
+[ 50%] Built target map_loader_node
+[35m[1mConsolidate compiler generated dependencies of target unit_manager_node[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/unit_manager_node.dir/src/core/unit_manager_node.cpp.o[0m
+[01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:[m[K In member function ‘[01m[Kvoid UnitManagerNode::publishMoveArea()[m[K’:
+[01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:147:43:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kint id[m[K’
+  147 |         auto makeMarker = [&](int id, [01;31m[Kint id[m[K, const std::string& ns,
+      |                                       [01;31m[K~~~~^~[m[K
+[01m[K/home/fvc/Desktop/robot_emblem/src/robot_emblem/src/core/unit_manager_node.cpp:147:35:[m[K [01;36m[Knote: [m[K‘[01m[Kint id[m[K’ previously declared here
+  147 |         auto makeMarker = [&]([01;36m[Kint id[m[K, int id, const std::string& ns,
+      |                               [01;36m[K~~~~^~[m[K
+gmake[2]: *** [CMakeFiles/unit_manager_node.dir/build.make:76: CMakeFiles/unit_manager_node.dir/src/core/unit_manager_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/unit_manager_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
