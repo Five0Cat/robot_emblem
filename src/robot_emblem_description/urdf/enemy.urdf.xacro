@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="enemy_unit">
+
+  <!-- Root link (dummy, no inertial) -->
+  <link name="enemy_root"/>
+
+  <!-- Base (torso) -->
+  <link name="enemy_torso">
+    <visual>
+      <geometry>
+        <box size="0.4 0.3 0.5"/>
+      </geometry>
+      <material name="enemy_red">
+        <color rgba="0.8 0.1 0.1 1.0"/>
+      </material>
+    </visual>
+  </link>
+
+  <!-- Connect root -> torso -->
+  <joint name="root_to_torso" type="fixed">
+    <parent link="enemy_root"/>
+    <child link="enemy_torso"/>
+    <origin xyz="0 0 0.25" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Head -->
+  <link name="enemy_head">
+    <visual>
+      <geometry>
+        <sphere radius="0.15"/>
+      </geometry>
+      <material name="black">
+        <color rgba="0.1 0.1 0.1 1.0"/>
+      </material>
+    </visual>
+  </link>
+  <joint name="torso_to_head" type="fixed">
+    <parent link="enemy_torso"/>
+    <child link="enemy_head"/>
+    <origin xyz="0 0 0.4" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Left Arm -->
+  <link name="enemy_arm_left">
+    <visual>
+      <geometry>
+        <cylinder length="0.3" radius="0.05"/>
+      </geometry>
+      <material name="dark_red">
+        <color rgba="0.6 0.0 0.0 1.0"/>
+      </material>
+    </visual>
+  </link>
+  <joint name="torso_to_arm_left" type="fixed">
+    <parent link="enemy_torso"/>
+    <child link="enemy_arm_left"/>
+    <origin xyz="0.0 0.2 0.2" rpy="0 0 1.57"/>
+  </joint>
+
+  <!-- Right Arm -->
+  <link name="enemy_arm_right">
+    <visual>
+      <geometry>
+        <cylinder length="0.3" radius="0.05"/>
+      </geometry>
+      <material name="dark_red"/>
+    </visual>
+  </link>
+  <joint name="torso_to_arm_right" type="fixed">
+    <parent link="enemy_torso"/>
+    <child link="enemy_arm_right"/>
+    <origin xyz="0.0 -0.2 0.2" rpy="0 0 1.57"/>
+  </joint>
+
+  <!-- Left Leg -->
+  <link name="enemy_leg_left">
+    <visual>
+      <geometry>
+        <cylinder length="0.35" radius="0.07"/>
+      </geometry>
+      <material name="enemy_red"/>
+    </visual>
+  </link>
+  <joint name="torso_to_leg_left" type="fixed">
+    <parent link="enemy_torso"/>
+    <child link="enemy_leg_left"/>
+    <origin xyz="0.1 0.1 -0.25" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Right Leg -->
+  <link name="enemy_leg_right">
+    <visual>
+      <geometry>
+        <cylinder length="0.35" radius="0.07"/>
+      </geometry>
+      <material name="enemy_red"/>
+    </visual>
+  </link>
+  <joint name="torso_to_leg_right" type="fixed">
+    <parent link="enemy_torso"/>
+    <child link="enemy_leg_right"/>
+    <origin xyz="0.1 -0.1 -0.25" rpy="0 0 0"/>
+  </joint>
+
+</robot>

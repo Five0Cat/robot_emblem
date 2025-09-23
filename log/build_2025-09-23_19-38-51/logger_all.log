@@ -1,0 +1,203 @@
+[0.637s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.637s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=2, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x72294e33f430>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x72294e478850>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x72294e478850>>)
+[1.714s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.714s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.714s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.714s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.714s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.714s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.714s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/fvc/Desktop/robot_emblem'
+[1.715s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.715s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.715s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.715s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.715s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.715s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.717s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.717s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.717s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.768s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.768s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.768s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.768s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.769s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.769s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.769s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.769s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.769s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.769s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.772s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.772s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.772s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.773s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.773s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.773s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.773s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.773s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.773s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.774s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.774s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.775s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.775s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.775s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.775s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.775s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.775s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.775s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.776s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_emblem) by extensions ['ignore', 'ignore_ament_install']
+[1.776s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_emblem) by extension 'ignore'
+[1.776s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_emblem) by extension 'ignore_ament_install'
+[1.776s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_emblem) by extensions ['colcon_pkg']
+[1.776s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_emblem) by extension 'colcon_pkg'
+[1.776s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_emblem) by extensions ['colcon_meta']
+[1.776s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_emblem) by extension 'colcon_meta'
+[1.778s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_emblem) by extensions ['ros']
+[1.779s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_emblem) by extension 'ros'
+[1.789s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_emblem' with type 'ros.ament_cmake' and name 'robot_emblem'
+[1.790s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_emblem_description) by extensions ['ignore', 'ignore_ament_install']
+[1.791s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_emblem_description) by extension 'ignore'
+[1.791s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_emblem_description) by extension 'ignore_ament_install'
+[1.791s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_emblem_description) by extensions ['colcon_pkg']
+[1.791s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_emblem_description) by extension 'colcon_pkg'
+[1.793s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_emblem_description) by extensions ['colcon_meta']
+[1.793s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_emblem_description) by extension 'colcon_meta'
+[1.793s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_emblem_description) by extensions ['ros']
+[1.793s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_emblem_description) by extension 'ros'
+[1.795s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_emblem_description' with type 'ros.ament_cmake' and name 'robot_emblem_description'
+[1.795s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.795s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.795s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.795s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.795s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.889s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.889s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.901s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/fvc/Desktop/robot_emblem/install
+[1.916s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 273 installed packages in /opt/ros/humble
+[1.920s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.114s] Level 5:colcon.colcon_core.verb:set package 'robot_emblem' build argument 'cmake_args' from command line to 'None'
+[2.114s] Level 5:colcon.colcon_core.verb:set package 'robot_emblem' build argument 'cmake_target' from command line to 'None'
+[2.114s] Level 5:colcon.colcon_core.verb:set package 'robot_emblem' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.115s] Level 5:colcon.colcon_core.verb:set package 'robot_emblem' build argument 'cmake_clean_cache' from command line to 'False'
+[2.115s] Level 5:colcon.colcon_core.verb:set package 'robot_emblem' build argument 'cmake_clean_first' from command line to 'False'
+[2.115s] Level 5:colcon.colcon_core.verb:set package 'robot_emblem' build argument 'cmake_force_configure' from command line to 'False'
+[2.115s] Level 5:colcon.colcon_core.verb:set package 'robot_emblem' build argument 'ament_cmake_args' from command line to 'None'
+[2.115s] Level 5:colcon.colcon_core.verb:set package 'robot_emblem' build argument 'catkin_cmake_args' from command line to 'None'
+[2.115s] Level 5:colcon.colcon_core.verb:set package 'robot_emblem' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.115s] DEBUG:colcon.colcon_core.verb:Building package 'robot_emblem' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/fvc/Desktop/robot_emblem/build/robot_emblem', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/fvc/Desktop/robot_emblem/install/robot_emblem', 'merge_install': False, 'path': '/home/fvc/Desktop/robot_emblem/src/robot_emblem', 'symlink_install': False, 'test_result_base': None}
+[2.116s] Level 5:colcon.colcon_core.verb:set package 'robot_emblem_description' build argument 'cmake_args' from command line to 'None'
+[2.116s] Level 5:colcon.colcon_core.verb:set package 'robot_emblem_description' build argument 'cmake_target' from command line to 'None'
+[2.117s] Level 5:colcon.colcon_core.verb:set package 'robot_emblem_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.117s] Level 5:colcon.colcon_core.verb:set package 'robot_emblem_description' build argument 'cmake_clean_cache' from command line to 'False'
+[2.117s] Level 5:colcon.colcon_core.verb:set package 'robot_emblem_description' build argument 'cmake_clean_first' from command line to 'False'
+[2.117s] Level 5:colcon.colcon_core.verb:set package 'robot_emblem_description' build argument 'cmake_force_configure' from command line to 'False'
+[2.117s] Level 5:colcon.colcon_core.verb:set package 'robot_emblem_description' build argument 'ament_cmake_args' from command line to 'None'
+[2.117s] Level 5:colcon.colcon_core.verb:set package 'robot_emblem_description' build argument 'catkin_cmake_args' from command line to 'None'
+[2.117s] Level 5:colcon.colcon_core.verb:set package 'robot_emblem_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.117s] DEBUG:colcon.colcon_core.verb:Building package 'robot_emblem_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/fvc/Desktop/robot_emblem/build/robot_emblem_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/fvc/Desktop/robot_emblem/install/robot_emblem_description', 'merge_install': False, 'path': '/home/fvc/Desktop/robot_emblem/src/robot_emblem_description', 'symlink_install': False, 'test_result_base': None}
+[2.118s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.155s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.157s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/fvc/Desktop/robot_emblem/src/robot_emblem' with build type 'ament_cmake'
+[2.157s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/fvc/Desktop/robot_emblem/src/robot_emblem'
+[2.175s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.176s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.176s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.207s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/fvc/Desktop/robot_emblem/src/robot_emblem_description' with build type 'ament_cmake'
+[2.207s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/fvc/Desktop/robot_emblem/src/robot_emblem_description'
+[2.207s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.207s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.342s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/fvc/Desktop/robot_emblem/build/robot_emblem': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/fvc/Desktop/robot_emblem/build/robot_emblem -- -j2 -l2
+[2.436s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/fvc/Desktop/robot_emblem/build/robot_emblem_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/fvc/Desktop/robot_emblem/build/robot_emblem_description -- -j2 -l2
+[5.925s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/fvc/Desktop/robot_emblem/build/robot_emblem_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/fvc/Desktop/robot_emblem/build/robot_emblem_description -- -j2 -l2
+[6.155s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/fvc/Desktop/robot_emblem/build/robot_emblem_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/fvc/Desktop/robot_emblem/build/robot_emblem_description
+[6.428s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_emblem_description)
+[6.431s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/fvc/Desktop/robot_emblem/build/robot_emblem_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/fvc/Desktop/robot_emblem/build/robot_emblem_description
+[6.468s] Level 1:colcon.colcon_core.environment:checking '/home/fvc/Desktop/robot_emblem/install/robot_emblem_description' for CMake module files
+[6.472s] Level 1:colcon.colcon_core.environment:checking '/home/fvc/Desktop/robot_emblem/install/robot_emblem_description' for CMake config files
+[6.483s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_emblem_description', 'cmake_prefix_path')
+[6.483s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/hook/cmake_prefix_path.ps1'
+[6.491s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/hook/cmake_prefix_path.dsv'
+[6.496s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/hook/cmake_prefix_path.sh'
+[6.501s] Level 1:colcon.colcon_core.environment:checking '/home/fvc/Desktop/robot_emblem/install/robot_emblem_description/bin'
+[6.501s] Level 1:colcon.colcon_core.environment:checking '/home/fvc/Desktop/robot_emblem/install/robot_emblem_description/lib/pkgconfig/robot_emblem_description.pc'
+[6.503s] Level 1:colcon.colcon_core.environment:checking '/home/fvc/Desktop/robot_emblem/install/robot_emblem_description/lib/python3.10/site-packages'
+[6.503s] Level 1:colcon.colcon_core.environment:checking '/home/fvc/Desktop/robot_emblem/install/robot_emblem_description/bin'
+[6.504s] INFO:colcon.colcon_core.shell:Creating package script '/home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/package.ps1'
+[6.511s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/package.dsv'
+[6.521s] INFO:colcon.colcon_core.shell:Creating package script '/home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/package.sh'
+[6.533s] INFO:colcon.colcon_core.shell:Creating package script '/home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/package.bash'
+[6.540s] INFO:colcon.colcon_core.shell:Creating package script '/home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/package.zsh'
+[6.551s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/colcon-core/packages/robot_emblem_description)
+[6.558s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_emblem_description)
+[6.561s] Level 1:colcon.colcon_core.environment:checking '/home/fvc/Desktop/robot_emblem/install/robot_emblem_description' for CMake module files
+[6.562s] Level 1:colcon.colcon_core.environment:checking '/home/fvc/Desktop/robot_emblem/install/robot_emblem_description' for CMake config files
+[6.570s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_emblem_description', 'cmake_prefix_path')
+[6.570s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/hook/cmake_prefix_path.ps1'
+[6.578s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/hook/cmake_prefix_path.dsv'
+[6.586s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/hook/cmake_prefix_path.sh'
+[6.591s] Level 1:colcon.colcon_core.environment:checking '/home/fvc/Desktop/robot_emblem/install/robot_emblem_description/bin'
+[6.592s] Level 1:colcon.colcon_core.environment:checking '/home/fvc/Desktop/robot_emblem/install/robot_emblem_description/lib/pkgconfig/robot_emblem_description.pc'
+[6.592s] Level 1:colcon.colcon_core.environment:checking '/home/fvc/Desktop/robot_emblem/install/robot_emblem_description/lib/python3.10/site-packages'
+[6.592s] Level 1:colcon.colcon_core.environment:checking '/home/fvc/Desktop/robot_emblem/install/robot_emblem_description/bin'
+[6.593s] INFO:colcon.colcon_core.shell:Creating package script '/home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/package.ps1'
+[6.599s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/package.dsv'
+[6.600s] INFO:colcon.colcon_core.shell:Creating package script '/home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/package.sh'
+[6.613s] INFO:colcon.colcon_core.shell:Creating package script '/home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/package.bash'
+[6.617s] INFO:colcon.colcon_core.shell:Creating package script '/home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/package.zsh'
+[6.622s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/colcon-core/packages/robot_emblem_description)
+[53.572s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/fvc/Desktop/robot_emblem/build/robot_emblem' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/fvc/Desktop/robot_emblem/build/robot_emblem -- -j2 -l2
+[53.605s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/fvc/Desktop/robot_emblem/build/robot_emblem': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/fvc/Desktop/robot_emblem/build/robot_emblem
+[53.902s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_emblem)
+[53.903s] Level 1:colcon.colcon_core.environment:checking '/home/fvc/Desktop/robot_emblem/install/robot_emblem' for CMake module files
+[53.904s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/fvc/Desktop/robot_emblem/build/robot_emblem' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/fvc/Desktop/robot_emblem/build/robot_emblem
+[53.908s] Level 1:colcon.colcon_core.environment:checking '/home/fvc/Desktop/robot_emblem/install/robot_emblem' for CMake config files
+[53.911s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_emblem', 'cmake_prefix_path')
+[53.913s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/hook/cmake_prefix_path.ps1'
+[53.917s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/hook/cmake_prefix_path.dsv'
+[53.921s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/hook/cmake_prefix_path.sh'
+[53.924s] Level 1:colcon.colcon_core.environment:checking '/home/fvc/Desktop/robot_emblem/install/robot_emblem/lib'
+[53.924s] Level 1:colcon.colcon_core.environment:checking '/home/fvc/Desktop/robot_emblem/install/robot_emblem/bin'
+[53.924s] Level 1:colcon.colcon_core.environment:checking '/home/fvc/Desktop/robot_emblem/install/robot_emblem/lib/pkgconfig/robot_emblem.pc'
+[53.924s] Level 1:colcon.colcon_core.environment:checking '/home/fvc/Desktop/robot_emblem/install/robot_emblem/lib/python3.10/site-packages'
+[53.925s] Level 1:colcon.colcon_core.environment:checking '/home/fvc/Desktop/robot_emblem/install/robot_emblem/bin'
+[53.925s] INFO:colcon.colcon_core.shell:Creating package script '/home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/package.ps1'
+[53.928s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/package.dsv'
+[53.931s] INFO:colcon.colcon_core.shell:Creating package script '/home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/package.sh'
+[53.934s] INFO:colcon.colcon_core.shell:Creating package script '/home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/package.bash'
+[53.944s] INFO:colcon.colcon_core.shell:Creating package script '/home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/package.zsh'
+[53.949s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/fvc/Desktop/robot_emblem/install/robot_emblem/share/colcon-core/packages/robot_emblem)
+[53.952s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_emblem)
+[53.953s] Level 1:colcon.colcon_core.environment:checking '/home/fvc/Desktop/robot_emblem/install/robot_emblem' for CMake module files
+[53.956s] Level 1:colcon.colcon_core.environment:checking '/home/fvc/Desktop/robot_emblem/install/robot_emblem' for CMake config files
+[53.957s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_emblem', 'cmake_prefix_path')
+[53.958s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/hook/cmake_prefix_path.ps1'
+[53.963s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/hook/cmake_prefix_path.dsv'
+[53.968s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/hook/cmake_prefix_path.sh'
+[53.973s] Level 1:colcon.colcon_core.environment:checking '/home/fvc/Desktop/robot_emblem/install/robot_emblem/lib'
+[53.974s] Level 1:colcon.colcon_core.environment:checking '/home/fvc/Desktop/robot_emblem/install/robot_emblem/bin'
+[53.976s] Level 1:colcon.colcon_core.environment:checking '/home/fvc/Desktop/robot_emblem/install/robot_emblem/lib/pkgconfig/robot_emblem.pc'
+[53.976s] Level 1:colcon.colcon_core.environment:checking '/home/fvc/Desktop/robot_emblem/install/robot_emblem/lib/python3.10/site-packages'
+[53.976s] Level 1:colcon.colcon_core.environment:checking '/home/fvc/Desktop/robot_emblem/install/robot_emblem/bin'
+[53.977s] INFO:colcon.colcon_core.shell:Creating package script '/home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/package.ps1'
+[53.984s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/package.dsv'
+[53.988s] INFO:colcon.colcon_core.shell:Creating package script '/home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/package.sh'
+[53.990s] INFO:colcon.colcon_core.shell:Creating package script '/home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/package.bash'
+[53.992s] INFO:colcon.colcon_core.shell:Creating package script '/home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/package.zsh'
+[53.994s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/fvc/Desktop/robot_emblem/install/robot_emblem/share/colcon-core/packages/robot_emblem)
+[53.996s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[53.996s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[53.996s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[53.996s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[54.065s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[54.065s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[54.066s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[54.196s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[54.196s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/fvc/Desktop/robot_emblem/install/local_setup.ps1'
+[54.206s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/fvc/Desktop/robot_emblem/install/_local_setup_util_ps1.py'
+[54.211s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/fvc/Desktop/robot_emblem/install/setup.ps1'
+[54.225s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/fvc/Desktop/robot_emblem/install/local_setup.sh'
+[54.232s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/fvc/Desktop/robot_emblem/install/_local_setup_util_sh.py'
+[54.237s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/fvc/Desktop/robot_emblem/install/setup.sh'
+[54.244s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/fvc/Desktop/robot_emblem/install/local_setup.bash'
+[54.248s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/fvc/Desktop/robot_emblem/install/setup.bash'
+[54.253s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/fvc/Desktop/robot_emblem/install/local_setup.zsh'
+[54.259s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/fvc/Desktop/robot_emblem/install/setup.zsh'

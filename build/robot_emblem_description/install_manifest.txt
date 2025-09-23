@@ -1,3 +1,4 @@
+/home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/urdf/enemy.urdf.xacro
 /home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/urdf/fe_unit.urdf.xacro
 /home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/ament_index/resource_index/package_run_dependencies/robot_emblem_description
 /home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/ament_index/resource_index/parent_prefix_path/robot_emblem_description

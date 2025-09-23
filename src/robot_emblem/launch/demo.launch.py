@@ -15,7 +15,19 @@ def generate_launch_description():
     map_yaml  = PathJoinSubstitution([robot_pkg, 'maps', 'demo_map.yaml'])
     rviz_cfg  = PathJoinSubstitution([robot_pkg, 'rviz', 'demo.rviz'])
     urdf_xacro = PathJoinSubstitution([desc_pkg,  'urdf', 'fe_unit.urdf.xacro'])
+    enemy_xacro = PathJoinSubstitution([desc_pkg, 'urdf', 'enemy.urdf.xacro'])
 
+
+    enemy_rsp = Node(
+        package='robot_state_publisher',
+        executable='robot_state_publisher',
+        name='enemy_state_publisher',
+        output='screen',
+        parameters=[{
+            'robot_description': Command(['xacro ', enemy_xacro]),
+            'frame_prefix': 'enemy/'   # avoid crash with player unit
+        }]
+    )
     # robot_state_publisher：xacro → robot_description
     rsp = Node(
         package='robot_state_publisher',
@@ -68,5 +80,6 @@ def generate_launch_description():
         rsp,
         map_loader,
         unit_mgr,
+        enemy_rsp
         # rviz,
     ])

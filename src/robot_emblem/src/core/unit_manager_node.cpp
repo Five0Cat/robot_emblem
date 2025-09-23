@@ -15,7 +15,9 @@
 struct Cell{
     int ix,iy,cost;
 };
-
+enum class TurnPhase { 
+    Player_Select, Player_Moving, Enemy_Planning, Enemy_Moving };
+TurnPhase phase_{TurnPhase::Player_Select};
 struct MapData {
   int width = 0;
   int height = 0;
