@@ -1,0 +1,22 @@
+digraph G {
+"ally/base_link" -> "ally/torso_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"map" -> "ally/base_link"[label=" Broadcaster: default_authority\nAverage rate: 12.732\nBuffer length: 4.32\nMost recent transform: 1758630026.234297\nOldest transform: 1758630021.914498\n"];
+"ally/torso_link" -> "ally/arm_left"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"ally/torso_link" -> "ally/arm_right"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"ally/torso_link" -> "ally/backpack"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"ally/torso_link" -> "ally/core"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"ally/torso_link" -> "ally/visor_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"ally/visor_link" -> "ally/eye_left"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"ally/visor_link" -> "ally/eye_right"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"map" -> "enemy/base_link"[label=" Broadcaster: default_authority\nAverage rate: 12.732\nBuffer length: 4.32\nMost recent transform: 1758630026.234692\nOldest transform: 1758630021.914721\n"];
+"enemy/enemy_root" -> "enemy/enemy_torso"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"enemy/enemy_torso" -> "enemy/enemy_arm_left"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"enemy/enemy_torso" -> "enemy/enemy_arm_right"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"enemy/enemy_torso" -> "enemy/enemy_head"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"enemy/enemy_torso" -> "enemy/enemy_leg_left"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"enemy/enemy_torso" -> "enemy/enemy_leg_right"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1758630026.2536905"[ shape=plaintext ] ;
+}->"enemy/enemy_root";
+}

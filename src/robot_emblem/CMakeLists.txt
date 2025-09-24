@@ -9,6 +9,8 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(yaml-cpp REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(yaml-cpp REQUIRED)
 find_package(visualization_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(tf2_ros REQUIRED)
@@ -37,7 +39,11 @@ target_include_directories(unit_manager_node PUBLIC
   $<INSTALL_INTERFACE:include>
 )
 ament_target_dependencies(unit_manager_node
-  rclcpp visualization_msgs geometry_msgs tf2_ros
+  rclcpp
+  std_msgs
+  geometry_msgs
+  visualization_msgs
+  tf2_ros
 )
 target_link_libraries(unit_manager_node yaml-cpp)
 

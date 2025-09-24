@@ -1,0 +1,247 @@
+[0.000000] (-) TimerEvent: {}
+[0.000384] (robot_emblem) JobQueued: {'identifier': 'robot_emblem', 'dependencies': OrderedDict()}
+[0.000441] (robot_emblem_description) JobQueued: {'identifier': 'robot_emblem_description', 'dependencies': OrderedDict()}
+[0.000622] (robot_emblem) JobStarted: {'identifier': 'robot_emblem'}
+[0.005511] (robot_emblem_description) JobStarted: {'identifier': 'robot_emblem_description'}
+[0.016243] (robot_emblem) JobProgress: {'identifier': 'robot_emblem', 'progress': 'cmake'}
+[0.018529] (robot_emblem) JobProgress: {'identifier': 'robot_emblem', 'progress': 'build'}
+[0.018608] (robot_emblem) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/fvc/Desktop/robot_emblem/build/robot_emblem', '--', '-j2', '-l2'], 'cwd': '/home/fvc/Desktop/robot_emblem/build/robot_emblem', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'fvc'), ('LC_TIME', 'ja_JP.UTF-8'), ('FONTCONFIG_PATH', '/etc/fonts'), ('GIO_MODULE_DIR', '/home/fvc/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/snap/code/207/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/fvc'), ('CHROME_DESKTOP', 'code.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('TERM_PROGRAM_VERSION', '1.104.1'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('GTK_PATH', '/snap/code/207/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('XDG_DATA_HOME_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE', '/home/fvc/snap/code/common/.cache/immodules/immodules.cache'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/207/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'ja_JP.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/207/usr/share/code/code'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1391'), ('BUNDLED_DEBUGPY_PATH', '/home/fvc/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=472ccbcfb90371f979186bf768d27ae4'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'fvc'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'fvc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/fvc/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/fvc-virtual-machine:@/tmp/.ICE-unix/1391,unix/fvc-virtual-machine:/tmp/.ICE-unix/1391'), ('GTK_EXE_PREFIX', '/snap/code/207/usr'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ja_JP.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/46d82eb0_9318_486e_8f4f_f78421e00a89'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/207/usr/lib/locale'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/fvc/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-29e60f67aa09575a.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/fvc/.config/Code/User/workspaceStorage/ebb7a2f41603fa6ff8b5eceef3fa303b/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'ja_JP.UTF-8'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XDG_DATA_HOME', '/home/fvc/snap/code/207/.local/share'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2372df7f29.sock'), ('GNOME_TERMINAL_SERVICE', ':1.87'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/fvc/snap/code/207/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ja_JP.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'ja_JP.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ja_JP.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/fvc/Desktop/robot_emblem/build/robot_emblem'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=472ccbcfb90371f979186bf768d27ae4'), ('XDG_DATA_DIRS', '/home/fvc/snap/code/207/.local/share:/home/fvc/snap/code/207:/snap/code/207/usr/share:/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ja_JP.UTF-8'), ('LC_PAPER', 'ja_JP.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.035257] (robot_emblem_description) JobProgress: {'identifier': 'robot_emblem_description', 'progress': 'cmake'}
+[0.045154] (robot_emblem_description) JobProgress: {'identifier': 'robot_emblem_description', 'progress': 'build'}
+[0.045392] (robot_emblem_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/fvc/Desktop/robot_emblem/build/robot_emblem_description', '--', '-j2', '-l2'], 'cwd': '/home/fvc/Desktop/robot_emblem/build/robot_emblem_description', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'fvc'), ('LC_TIME', 'ja_JP.UTF-8'), ('FONTCONFIG_PATH', '/etc/fonts'), ('GIO_MODULE_DIR', '/home/fvc/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/snap/code/207/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/fvc'), ('CHROME_DESKTOP', 'code.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('TERM_PROGRAM_VERSION', '1.104.1'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('GTK_PATH', '/snap/code/207/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('XDG_DATA_HOME_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE', '/home/fvc/snap/code/common/.cache/immodules/immodules.cache'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/207/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'ja_JP.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/207/usr/share/code/code'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1391'), ('BUNDLED_DEBUGPY_PATH', '/home/fvc/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=472ccbcfb90371f979186bf768d27ae4'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'fvc'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'fvc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/fvc/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/fvc-virtual-machine:@/tmp/.ICE-unix/1391,unix/fvc-virtual-machine:/tmp/.ICE-unix/1391'), ('GTK_EXE_PREFIX', '/snap/code/207/usr'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ja_JP.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/46d82eb0_9318_486e_8f4f_f78421e00a89'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/207/usr/lib/locale'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/fvc/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-29e60f67aa09575a.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/fvc/.config/Code/User/workspaceStorage/ebb7a2f41603fa6ff8b5eceef3fa303b/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'ja_JP.UTF-8'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XDG_DATA_HOME', '/home/fvc/snap/code/207/.local/share'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2372df7f29.sock'), ('GNOME_TERMINAL_SERVICE', ':1.87'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/fvc/snap/code/207/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ja_JP.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'ja_JP.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ja_JP.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/fvc/Desktop/robot_emblem/build/robot_emblem_description'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=472ccbcfb90371f979186bf768d27ae4'), ('XDG_DATA_DIRS', '/home/fvc/snap/code/207/.local/share:/home/fvc/snap/code/207:/snap/code/207/usr/share:/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ja_JP.UTF-8'), ('LC_PAPER', 'ja_JP.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099877] (-) TimerEvent: {}
+[0.193346] (robot_emblem_description) CommandEnded: {'returncode': 0}
+[0.193711] (robot_emblem_description) JobProgress: {'identifier': 'robot_emblem_description', 'progress': 'install'}
+[0.200148] (-) TimerEvent: {}
+[0.217448] (robot_emblem_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/fvc/Desktop/robot_emblem/build/robot_emblem_description'], 'cwd': '/home/fvc/Desktop/robot_emblem/build/robot_emblem_description', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'fvc'), ('LC_TIME', 'ja_JP.UTF-8'), ('FONTCONFIG_PATH', '/etc/fonts'), ('GIO_MODULE_DIR', '/home/fvc/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/snap/code/207/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/fvc'), ('CHROME_DESKTOP', 'code.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('TERM_PROGRAM_VERSION', '1.104.1'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('GTK_PATH', '/snap/code/207/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('XDG_DATA_HOME_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE', '/home/fvc/snap/code/common/.cache/immodules/immodules.cache'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/207/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'ja_JP.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/207/usr/share/code/code'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1391'), ('BUNDLED_DEBUGPY_PATH', '/home/fvc/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=472ccbcfb90371f979186bf768d27ae4'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'fvc'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'fvc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/fvc/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/fvc-virtual-machine:@/tmp/.ICE-unix/1391,unix/fvc-virtual-machine:/tmp/.ICE-unix/1391'), ('GTK_EXE_PREFIX', '/snap/code/207/usr'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ja_JP.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/46d82eb0_9318_486e_8f4f_f78421e00a89'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/207/usr/lib/locale'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/fvc/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-29e60f67aa09575a.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/fvc/.config/Code/User/workspaceStorage/ebb7a2f41603fa6ff8b5eceef3fa303b/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'ja_JP.UTF-8'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XDG_DATA_HOME', '/home/fvc/snap/code/207/.local/share'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2372df7f29.sock'), ('GNOME_TERMINAL_SERVICE', ':1.87'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/fvc/snap/code/207/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ja_JP.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'ja_JP.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ja_JP.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/fvc/Desktop/robot_emblem/build/robot_emblem_description'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=472ccbcfb90371f979186bf768d27ae4'), ('XDG_DATA_DIRS', '/home/fvc/snap/code/207/.local/share:/home/fvc/snap/code/207:/snap/code/207/usr/share:/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ja_JP.UTF-8'), ('LC_PAPER', 'ja_JP.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.233157] (robot_emblem) StdoutLine: {'line': b'[ 50%] Built target map_loader_node\n'}
+[0.245548] (robot_emblem) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/unit_manager_node.dir/src/core/unit_manager_node.cpp.o\x1b[0m\n'}
+[0.249206] (robot_emblem_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.249334] (robot_emblem_description) StdoutLine: {'line': b'-- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/urdf\n'}
+[0.249373] (robot_emblem_description) StdoutLine: {'line': b'-- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/urdf/enemy.urdf.xacro\n'}
+[0.249406] (robot_emblem_description) StdoutLine: {'line': b'-- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/urdf/fe_unit.urdf.xacro\n'}
+[0.249434] (robot_emblem_description) StdoutLine: {'line': b'-- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/launch\n'}
+[0.249462] (robot_emblem_description) StdoutLine: {'line': b'-- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/ament_index/resource_index/package_run_dependencies/robot_emblem_description\n'}
+[0.249490] (robot_emblem_description) StdoutLine: {'line': b'-- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/ament_index/resource_index/parent_prefix_path/robot_emblem_description\n'}
+[0.249518] (robot_emblem_description) StdoutLine: {'line': b'-- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/environment/ament_prefix_path.sh\n'}
+[0.249545] (robot_emblem_description) StdoutLine: {'line': b'-- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/environment/ament_prefix_path.dsv\n'}
+[0.249571] (robot_emblem_description) StdoutLine: {'line': b'-- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/environment/path.sh\n'}
+[0.249597] (robot_emblem_description) StdoutLine: {'line': b'-- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/environment/path.dsv\n'}
+[0.249623] (robot_emblem_description) StdoutLine: {'line': b'-- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/local_setup.bash\n'}
+[0.249649] (robot_emblem_description) StdoutLine: {'line': b'-- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/local_setup.sh\n'}
+[0.249675] (robot_emblem_description) StdoutLine: {'line': b'-- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/local_setup.zsh\n'}
+[0.249702] (robot_emblem_description) StdoutLine: {'line': b'-- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/local_setup.dsv\n'}
+[0.249733] (robot_emblem_description) StdoutLine: {'line': b'-- Installing: /home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/package.dsv\n'}
+[0.250486] (robot_emblem_description) StdoutLine: {'line': b'-- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/ament_index/resource_index/packages/robot_emblem_description\n'}
+[0.250577] (robot_emblem_description) StdoutLine: {'line': b'-- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/cmake/robot_emblem_descriptionConfig.cmake\n'}
+[0.250613] (robot_emblem_description) StdoutLine: {'line': b'-- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/cmake/robot_emblem_descriptionConfig-version.cmake\n'}
+[0.250647] (robot_emblem_description) StdoutLine: {'line': b'-- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem_description/share/robot_emblem_description/package.xml\n'}
+[0.255288] (robot_emblem_description) CommandEnded: {'returncode': 0}
+[0.296545] (robot_emblem_description) JobEnded: {'identifier': 'robot_emblem_description', 'rc': 0}
+[0.301381] (-) TimerEvent: {}
+[0.405182] (-) TimerEvent: {}
+[0.509425] (-) TimerEvent: {}
+[0.610124] (-) TimerEvent: {}
+[0.710887] (-) TimerEvent: {}
+[0.812553] (-) TimerEvent: {}
+[0.913353] (-) TimerEvent: {}
+[1.014273] (-) TimerEvent: {}
+[1.117718] (-) TimerEvent: {}
+[1.219213] (-) TimerEvent: {}
+[1.320341] (-) TimerEvent: {}
+[1.421335] (-) TimerEvent: {}
+[1.522163] (-) TimerEvent: {}
+[1.628264] (-) TimerEvent: {}
+[1.729331] (-) TimerEvent: {}
+[1.830543] (-) TimerEvent: {}
+[1.931101] (-) TimerEvent: {}
+[2.032518] (-) TimerEvent: {}
+[2.133652] (-) TimerEvent: {}
+[2.238822] (-) TimerEvent: {}
+[2.341152] (-) TimerEvent: {}
+[2.442577] (-) TimerEvent: {}
+[2.561841] (-) TimerEvent: {}
+[2.665772] (-) TimerEvent: {}
+[2.767352] (-) TimerEvent: {}
+[2.871644] (-) TimerEvent: {}
+[2.972366] (-) TimerEvent: {}
+[3.075274] (-) TimerEvent: {}
+[3.175837] (-) TimerEvent: {}
+[3.277111] (-) TimerEvent: {}
+[3.378768] (-) TimerEvent: {}
+[3.480221] (-) TimerEvent: {}
+[3.585056] (-) TimerEvent: {}
+[3.685987] (-) TimerEvent: {}
+[3.786925] (-) TimerEvent: {}
+[3.887750] (-) TimerEvent: {}
+[3.988646] (-) TimerEvent: {}
+[4.090440] (-) TimerEvent: {}
+[4.195635] (-) TimerEvent: {}
+[4.296421] (-) TimerEvent: {}
+[4.397767] (-) TimerEvent: {}
+[4.498873] (-) TimerEvent: {}
+[4.601038] (-) TimerEvent: {}
+[4.703146] (-) TimerEvent: {}
+[4.803802] (-) TimerEvent: {}
+[4.904786] (-) TimerEvent: {}
+[5.007656] (-) TimerEvent: {}
+[5.108246] (-) TimerEvent: {}
+[5.209121] (-) TimerEvent: {}
+[5.310307] (-) TimerEvent: {}
+[5.417160] (-) TimerEvent: {}
+[5.518625] (-) TimerEvent: {}
+[5.619118] (-) TimerEvent: {}
+[5.732247] (-) TimerEvent: {}
+[5.833340] (-) TimerEvent: {}
+[5.937335] (-) TimerEvent: {}
+[6.079276] (-) TimerEvent: {}
+[6.188746] (-) TimerEvent: {}
+[6.293040] (-) TimerEvent: {}
+[6.397345] (-) TimerEvent: {}
+[6.498238] (-) TimerEvent: {}
+[6.600711] (-) TimerEvent: {}
+[6.702513] (-) TimerEvent: {}
+[6.806658] (-) TimerEvent: {}
+[6.915036] (-) TimerEvent: {}
+[7.016216] (-) TimerEvent: {}
+[7.146932] (-) TimerEvent: {}
+[7.253857] (-) TimerEvent: {}
+[7.354760] (-) TimerEvent: {}
+[7.457926] (-) TimerEvent: {}
+[7.568031] (-) TimerEvent: {}
+[7.673329] (-) TimerEvent: {}
+[7.773978] (-) TimerEvent: {}
+[7.876489] (-) TimerEvent: {}
+[7.977663] (-) TimerEvent: {}
+[8.078825] (-) TimerEvent: {}
+[8.186222] (-) TimerEvent: {}
+[8.288276] (-) TimerEvent: {}
+[8.389373] (-) TimerEvent: {}
+[8.490913] (-) TimerEvent: {}
+[8.598311] (-) TimerEvent: {}
+[8.709679] (-) TimerEvent: {}
+[8.815241] (-) TimerEvent: {}
+[8.916398] (-) TimerEvent: {}
+[9.019747] (-) TimerEvent: {}
+[9.133892] (-) TimerEvent: {}
+[9.235223] (-) TimerEvent: {}
+[9.336107] (-) TimerEvent: {}
+[9.437202] (-) TimerEvent: {}
+[9.538101] (-) TimerEvent: {}
+[9.639063] (-) TimerEvent: {}
+[9.740216] (-) TimerEvent: {}
+[9.841570] (-) TimerEvent: {}
+[9.942179] (-) TimerEvent: {}
+[10.044653] (-) TimerEvent: {}
+[10.145877] (-) TimerEvent: {}
+[10.247251] (-) TimerEvent: {}
+[10.348391] (-) TimerEvent: {}
+[10.449778] (-) TimerEvent: {}
+[10.551467] (-) TimerEvent: {}
+[10.663644] (-) TimerEvent: {}
+[10.764567] (-) TimerEvent: {}
+[10.866025] (-) TimerEvent: {}
+[10.974404] (-) TimerEvent: {}
+[11.075543] (-) TimerEvent: {}
+[11.176520] (-) TimerEvent: {}
+[11.280223] (-) TimerEvent: {}
+[11.381033] (-) TimerEvent: {}
+[11.493435] (-) TimerEvent: {}
+[11.596617] (-) TimerEvent: {}
+[11.697494] (-) TimerEvent: {}
+[11.797925] (-) TimerEvent: {}
+[11.898440] (-) TimerEvent: {}
+[12.001083] (-) TimerEvent: {}
+[12.102228] (-) TimerEvent: {}
+[12.203309] (-) TimerEvent: {}
+[12.304442] (-) TimerEvent: {}
+[12.408155] (-) TimerEvent: {}
+[12.508978] (-) TimerEvent: {}
+[12.611034] (-) TimerEvent: {}
+[12.718267] (-) TimerEvent: {}
+[12.818924] (-) TimerEvent: {}
+[12.921968] (-) TimerEvent: {}
+[13.023170] (-) TimerEvent: {}
+[13.124147] (-) TimerEvent: {}
+[13.224752] (-) TimerEvent: {}
+[13.325823] (-) TimerEvent: {}
+[13.426531] (-) TimerEvent: {}
+[13.528077] (-) TimerEvent: {}
+[13.630317] (-) TimerEvent: {}
+[13.731675] (-) TimerEvent: {}
+[13.832893] (-) TimerEvent: {}
+[13.933605] (-) TimerEvent: {}
+[14.034201] (-) TimerEvent: {}
+[14.136053] (-) TimerEvent: {}
+[14.236957] (-) TimerEvent: {}
+[14.338162] (-) TimerEvent: {}
+[14.439398] (-) TimerEvent: {}
+[14.540186] (-) TimerEvent: {}
+[14.640803] (-) TimerEvent: {}
+[14.742627] (-) TimerEvent: {}
+[14.848465] (-) TimerEvent: {}
+[14.949407] (-) TimerEvent: {}
+[15.050107] (-) TimerEvent: {}
+[15.150943] (-) TimerEvent: {}
+[15.252136] (-) TimerEvent: {}
+[15.354932] (-) TimerEvent: {}
+[15.455657] (-) TimerEvent: {}
+[15.556286] (-) TimerEvent: {}
+[15.657478] (-) TimerEvent: {}
+[15.759347] (-) TimerEvent: {}
+[15.860182] (-) TimerEvent: {}
+[15.960821] (-) TimerEvent: {}
+[16.061942] (-) TimerEvent: {}
+[16.162727] (-) TimerEvent: {}
+[16.263295] (-) TimerEvent: {}
+[16.363833] (-) TimerEvent: {}
+[16.464273] (-) TimerEvent: {}
+[16.566026] (-) TimerEvent: {}
+[16.666844] (-) TimerEvent: {}
+[16.770853] (-) TimerEvent: {}
+[16.872221] (-) TimerEvent: {}
+[16.974308] (-) TimerEvent: {}
+[17.075080] (-) TimerEvent: {}
+[17.176924] (-) TimerEvent: {}
+[17.277740] (-) TimerEvent: {}
+[17.378333] (-) TimerEvent: {}
+[17.465721] (robot_emblem) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable unit_manager_node\x1b[0m\n'}
+[17.479013] (-) TimerEvent: {}
+[17.580866] (-) TimerEvent: {}
+[17.681379] (-) TimerEvent: {}
+[17.781997] (-) TimerEvent: {}
+[17.883525] (-) TimerEvent: {}
+[17.985324] (-) TimerEvent: {}
+[18.086343] (-) TimerEvent: {}
+[18.188191] (-) TimerEvent: {}
+[18.245060] (robot_emblem) StdoutLine: {'line': b'[100%] Built target unit_manager_node\n'}
+[18.275633] (robot_emblem) CommandEnded: {'returncode': 0}
+[18.276744] (robot_emblem) JobProgress: {'identifier': 'robot_emblem', 'progress': 'install'}
+[18.281792] (robot_emblem) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/fvc/Desktop/robot_emblem/build/robot_emblem'], 'cwd': '/home/fvc/Desktop/robot_emblem/build/robot_emblem', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'fvc'), ('LC_TIME', 'ja_JP.UTF-8'), ('FONTCONFIG_PATH', '/etc/fonts'), ('GIO_MODULE_DIR', '/home/fvc/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/snap/code/207/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/fvc'), ('CHROME_DESKTOP', 'code.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('TERM_PROGRAM_VERSION', '1.104.1'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('GTK_PATH', '/snap/code/207/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('XDG_DATA_HOME_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE', '/home/fvc/snap/code/common/.cache/immodules/immodules.cache'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/207/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'ja_JP.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/207/usr/share/code/code'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1391'), ('BUNDLED_DEBUGPY_PATH', '/home/fvc/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=472ccbcfb90371f979186bf768d27ae4'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'fvc'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'fvc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/fvc/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/fvc-virtual-machine:@/tmp/.ICE-unix/1391,unix/fvc-virtual-machine:/tmp/.ICE-unix/1391'), ('GTK_EXE_PREFIX', '/snap/code/207/usr'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ja_JP.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/46d82eb0_9318_486e_8f4f_f78421e00a89'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/207/usr/lib/locale'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/fvc/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-29e60f67aa09575a.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/fvc/.config/Code/User/workspaceStorage/ebb7a2f41603fa6ff8b5eceef3fa303b/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'ja_JP.UTF-8'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XDG_DATA_HOME', '/home/fvc/snap/code/207/.local/share'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2372df7f29.sock'), ('GNOME_TERMINAL_SERVICE', ':1.87'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/fvc/snap/code/207/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ja_JP.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'ja_JP.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ja_JP.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/fvc/Desktop/robot_emblem/build/robot_emblem'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=472ccbcfb90371f979186bf768d27ae4'), ('XDG_DATA_DIRS', '/home/fvc/snap/code/207/.local/share:/home/fvc/snap/code/207:/snap/code/207/usr/share:/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ja_JP.UTF-8'), ('LC_PAPER', 'ja_JP.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[18.290174] (-) TimerEvent: {}
+[18.294482] (robot_emblem) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[18.296367] (robot_emblem) StdoutLine: {'line': b'-- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/launch\n'}
+[18.296788] (robot_emblem) StdoutLine: {'line': b'-- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/launch/demo.launch.py\n'}
+[18.296870] (robot_emblem) StdoutLine: {'line': b'-- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/maps\n'}
+[18.297443] (robot_emblem) StdoutLine: {'line': b'-- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/maps/demo_map.yaml\n'}
+[18.297575] (robot_emblem) StdoutLine: {'line': b'-- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem/lib/robot_emblem/map_loader_node\n'}
+[18.301433] (robot_emblem) StdoutLine: {'line': b'-- Installing: /home/fvc/Desktop/robot_emblem/install/robot_emblem/lib/robot_emblem/unit_manager_node\n'}
+[18.312548] (robot_emblem) StdoutLine: {'line': b'-- Set runtime path of "/home/fvc/Desktop/robot_emblem/install/robot_emblem/lib/robot_emblem/unit_manager_node" to ""\n'}
+[18.313506] (robot_emblem) StdoutLine: {'line': b'-- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem/share/ament_index/resource_index/package_run_dependencies/robot_emblem\n'}
+[18.313568] (robot_emblem) StdoutLine: {'line': b'-- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem/share/ament_index/resource_index/parent_prefix_path/robot_emblem\n'}
+[18.314607] (robot_emblem) StdoutLine: {'line': b'-- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/environment/ament_prefix_path.sh\n'}
+[18.314752] (robot_emblem) StdoutLine: {'line': b'-- Installing: /home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/environment/ament_prefix_path.dsv\n'}
+[18.316172] (robot_emblem) StdoutLine: {'line': b'-- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/environment/path.sh\n'}
+[18.316248] (robot_emblem) StdoutLine: {'line': b'-- Installing: /home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/environment/path.dsv\n'}
+[18.316369] (robot_emblem) StdoutLine: {'line': b'-- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/local_setup.bash\n'}
+[18.316607] (robot_emblem) StdoutLine: {'line': b'-- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/local_setup.sh\n'}
+[18.316820] (robot_emblem) StdoutLine: {'line': b'-- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/local_setup.zsh\n'}
+[18.317008] (robot_emblem) StdoutLine: {'line': b'-- Installing: /home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/local_setup.dsv\n'}
+[18.317573] (robot_emblem) StdoutLine: {'line': b'-- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/package.dsv\n'}
+[18.317857] (robot_emblem) StdoutLine: {'line': b'-- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem/share/ament_index/resource_index/packages/robot_emblem\n'}
+[18.318829] (robot_emblem) StdoutLine: {'line': b'-- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/cmake/robot_emblemConfig.cmake\n'}
+[18.318943] (robot_emblem) StdoutLine: {'line': b'-- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/cmake/robot_emblemConfig-version.cmake\n'}
+[18.319120] (robot_emblem) StdoutLine: {'line': b'-- Up-to-date: /home/fvc/Desktop/robot_emblem/install/robot_emblem/share/robot_emblem/package.xml\n'}
+[18.323940] (robot_emblem) CommandEnded: {'returncode': 0}
+[18.365401] (robot_emblem) JobEnded: {'identifier': 'robot_emblem', 'rc': 0}
+[18.366280] (-) EventReactorShutdown: {}

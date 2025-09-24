@@ -2,7 +2,7 @@
 <robot xmlns:xacro="http://ros.org/wiki/xacro" name="enemy_unit">
 
   <!-- Root link (dummy, no inertial) -->
-  <link name="enemy_root"/>
+  <link name="base_link"/>
 
   <!-- Base (torso) -->
   <link name="enemy_torso">
@@ -18,7 +18,7 @@
 
   <!-- Connect root -> torso -->
   <joint name="root_to_torso" type="fixed">
-    <parent link="enemy_root"/>
+    <parent link="base_link"/>
     <child link="enemy_torso"/>
     <origin xyz="0 0 0.25" rpy="0 0 0"/>
   </joint>
